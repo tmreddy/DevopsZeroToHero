@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shell Scripting Tutorial</title>
+  </head>
+  <body>
+    <h1>Shell Scripting Turorial</h1>
+    <ol>
+      <li>
+        $ touch first-shell-script.sh - extenstion for shell script file, to
+        create file
+      </li>
+      <li>$ ls - listing the files or folders</li>
+      <li>$ ls -ltr - with timestap</li>
+      <li>$ man ls - manual like help</li>
+      <li>$ man touch</li>
+      <li>$ vi first-shell-script.sh - creates and opens the file</li>
+      <li>$ vim first-shell-script.sh - creates and opens the file</li>
+      <li>
+        #!/bin/bash or dash or sh or ksh or AX- shebang after bin are the
+        executables- widely used is bash
+      </li>
+      <li>editing the file</li>
+      <ol>
+        <li>esc i - we are in insert mode</li>
+        <li>esc :wq! - save the file</li>
+        <li>esc :q! - quit without saving the changes</li>
+        <li>cat first-shell-script.sh - used to print the file contents</li>
+      </ol>
+      <li>sh first-shell-script.sh - to execute shell file</li>
+      <li>./ first-shell-script.sh - to execute shell file</li>
+      <li>we need to grant permissions to execute the shell file</li>
+      <li>$ chmod - grants permissions to a file ch is for change,</li>
+      <li>
+        chmod is divided into three categories, root user, which group and what
+        are your permissions
+      </li>
+      <li>chmod 777 first-shell-script - grants for all users[everyone]</li>
+      <li>7 for my self (owner), 7 for my group, 7 for all users</li>
+      <li>4 is for read, 2 for write, 1 for execute</li>
+      <li>$ history</li>
+      <li><code> #!/bin/bash echo "my name is mreddy" </code></li>
+      <li><code> vim sample-shell-script.sh</code></li>
+      <li>
+        <code>
+          #!/bin/bash <br />
+          # create a folder <br />
+          mkdir mreddy <br />
+          # create two files this is comment <br />
+          cd mreddy <br />
+          touch firstfile secondfile
+        </code>
+      </li>
+      <li>$chmod 777 sample-shell-script.sh</li>
+      <li>$ sh sample-shell-script.sh</li>
+      <li>Devops - day to day activities</li>
+      <ol>
+        <li>Infrastructure management</li>
+        <li>Code management [git]</li>
+        <li>Configuration management</li>
+      </ol>
+      <li>John works as Devops engineer</li>
+      <ol>
+        <li>10000 linux VMs</li>
+        <li>node health - cpu, memory, processors</li>
+        <li>John writes a shell script and excute to get the node details</li>
+        <li>
+          or John writes a shell script and can run automatically run in a day
+          to get the health of all 10000 vms
+        </li>
+      </ol>
+      <br />
+      <table border="1">
+        <thead>
+          <th>#!/bin/sh</th>
+          <th>#!/bin/bash</th>
+        </thead>
+        <tr>
+          <td>
+            earlier in some distributions #!/bin/sh was linked to #!/bin/bash
+          </td>
+          <td>
+            Now a days in some discributions #!/bin/sh is linked to #!/bin/dash
+          </td>
+        </tr>
+        <tr>
+          <td>
+            if #!/bin/sh is linked to #!/bin/bash it won't work where #!/bin/sh
+            is linked to #!/bin/dash
+          </td>
+          <td>where dash is default bash commands won't work</td>
+        </tr>
+      </table>
+      <br />
+      <table border="1">
+        <thead>
+          <th>Serial number</th>
+          <th>Command</th>
+          <th>Description</th>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>$ touch &lt;filename&gt;</td>
+          <td>command to create a file</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>$ vim &lt;filename&gt;</td>
+          <td>command to write in a file esc i, esc :wq!</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>$ cat &lt;filename&gt;</td>
+          <td>command to print file content</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>$ ls</td>
+          <td>command to list files and directory</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>$ chmod &lt;permission number&gt; &lt;filename&gt;</td>
+          <td>command to grant permissions to user, group and for everyone</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>$ man &lt;command-name&gt;</td>
+          <td>command to get manual for a command</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>$ history</td>
+          <td>command to get the history of commands got executed</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>$ pwd</td>
+          <td>command to get present working folder</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>$ mkdir &lt;foldername&gt;</td>
+          <td>command to create a folder</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>$ cd &lt;foldername&gt;</td>
+          <td>command to change directory</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>$ cd ..</td>
+          <td>command to move to previous directory</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>$ nproc</td>
+          <td>command to get the processes</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>$ free</td>
+          <td>command to get the memory</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>$ df</td>
+          <td>command to get the free memory</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>$ top</td>
+          <td>command to get the processors and memory details</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>ctrl + c</td>
+          <td>command to stop executing shell script</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>$ ps -ef</td>
+          <td>command to get processes details in full format</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>$ ps -ef | grep "amazon</td>
+          <td>
+            command to get only amazon processes details in full format, grep
+            will collect amazon processes from the first command ps -ef | is
+            used to connect first and second command.
+          </td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>$ date | echo "today is"</td>
+          <td>
+            date is system command and sends to stdin, | cannot get the input
+            from stdid output is today is
+          </td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>$ awk</td>
+          <td>
+            it can give specific columns e.g. ps -ef | grep amazon | awk -F" "
+            '{print $2}'
+          </td>
+        </tr>
+      </table>
+      <li>$ touch nodeHealth.sh</li>
+      <li>
+        <code>
+          #!/bin/bash <br />
+
+          ################ <br />
+          # Author : mreddy <br />
+          # Date : 24/01/24 <br />
+          # <br />
+          # This script outputs the node health <br />
+          # <br />
+          # Version: v1 <br />
+          ################ <br />
+
+          set -x # debug mode shows the commands and prints the output echo
+          "Print the disk space " <br />
+          df -h <br />
+          echo "Print the memory " <br />
+          free -g <br />
+          echo "Print the cpu details " <br />
+          nproc <br />
+        </code>
+      </li>
+    </ol>
+  </body>
+</html>

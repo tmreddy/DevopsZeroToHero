@@ -1,0 +1,23 @@
+.star {
+  color: red;
+  word-spacing: 20px;
+  font-size: larger;
+}
+.service {
+  color: darkviolet;
+  font-size: x-large;
+}
+.star:before {
+  content: "*";
+}
+
+body {
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+img {
+  width: 800px;
+}

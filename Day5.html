@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automation to create Infrastructure</title>
+  </head>
+  <body>
+    <h1>Automation to create Infrastructure</h1>
+    <ol>
+      <li>ssh ubuntu@3.92.205.153</li>
+      <li>this will give error as we have not provided keys</li>
+      <li>ssh -i /users/mreddy/downloads/test.pem ubuntu@3.92.205.153</li>
+      <li>This failed because test.pem are to open</li>
+      <li>chmod 600 /users/mreddy/downloads/test.pem</li>
+      <li>ssh -i /users/mreddy/downloads/test.pem ubuntu@3.92.205.153</li>
+      <li>AWS Command line interface</li>
+      <li>aws version</li>
+      <li>aws configure</li>
+      <li>aws s3 ls</li>
+      <li>aws s3 mb mreddy12345</li>
+      <li>
+        <a href="https://github.com/awslabs">https://github.com/awslabs</a> -
+        cloudformation templates
+      </li>
+      <li>Infrastructure as code [IAC]</li>
+      <li>boto3 python for IAC</li>
+      <li>
+        Task: Install AWS CLI, configure AWS credentials and execute some
+        commands
+      </li>
+    </ol>
+  </body>
+</html>
