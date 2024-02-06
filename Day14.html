@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuration Management</title>
+  </head>
+  <body>
+    <h1>Configuration Management</h1>
+    <ol>
+      <li>One of the easiest thing to learn in DevOps</li>
+      <li>Configuration of Infrastructure</li>
+      <li>Upgrades</li>
+      <li>Secure patches</li>
+      <li>Installations</li>
+      <li>Windows - powersheel</li>
+      <li>Linux - Shell Script</li>
+      <li>Number of servers gone to 10x on AWS</li>
+      <li>Configuration mangament</li>
+      <ol>
+        <li>Puppet</li>
+        <li>Chef</li>
+        <li>Ansible - Most number of users/DevOps</li>
+        <li>Salt</li>
+      </ol>
+      <table border="1">
+        <thead>
+          <th>Puppet</th>
+          <th>Ansible</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pull model</td>
+            <td>Push model</td>
+          </tr>
+          <tr>
+            <td>Master slave architecture</td>
+            <td>
+              * Agentless [inventory file, enable password less authentication,
+              Dynamic inventory(ini file)]
+            </td>
+          </tr>
+          <tr>
+            <td>Support for linux, to use windows its tricky</td>
+            <td>Support for windows, linux its very pretty</td>
+          </tr>
+          <tr>
+            <td>Need to learn new language puppet language</td>
+            <td>Simple YAML file, YAML is also used in Kubernetes</td>
+          </tr>
+        </tbody>
+      </table>
+      <ol>
+        Ansible has also some disadvangaes
+      </ol>
+      <ol>
+        <li>Support of windows is still bit difficult</li>
+        <li>Debugging logs - playbook executing</li>
+        <li>Performance issues</li>
+      </ol>
+      <li>You can write your own modules</li>
+      <li>Ansible galaxy is used to share modules</li>
+      <li>
+        18 most asked inerview
+        <a
+          href="https://www.youtube.com/watch?v=j5PgN0J3d7M&t=4s"
+          target="_blank"
+          rel="noopener noreferrer"
+          >18 question</a
+        >
+      </li>
+      <li>Ansible is written in Python</li>
+      <li>For linux it uses SSH protocal</li>
+      <li>For windows it uses win RM protocal</li>
+      <li>Puppet vs Ansible</li>
+      <li>Is Ansible push or pull answer is push</li>
+      <li>Ansible uses YAML</li>
+      <li>
+        Does Ansible support all cloud provides, ans is yes because Ansible
+        needs public IP address, SSH enabled or winrm for windows is enabled, is the machine accessable form Ansible host.
+      </li>
+    </ol>
+  </body>
+</html>

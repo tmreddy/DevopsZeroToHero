@@ -72,6 +72,33 @@
           to get the health of all 10000 vms
         </li>
       </ol>
+      <li><code> vim ifelse.sh </code></li>
+      <li>
+        <code>
+          if [expression] <br />
+          then <br />
+          abc <br />
+          else <br />
+          xyz <br />
+          fi
+        </code>
+      </li>
+      <li>
+        <code>
+          a=4 <br />
+          b=10 <br />
+          if [ %a > $b ] <br />
+          then <br />
+          echo "a is greater than b" <br />
+          else <br />
+          echo "b is greater than a" <br />
+          fi <br />
+        </code>
+      </li>
+      <li>
+        for loop <br />
+        <code> for i in {1.100}; do echo $i; done </code>
+      </li>
       <br />
       <table border="1">
         <thead>
@@ -183,11 +210,16 @@
         </tr>
         <tr>
           <td>17</td>
-          <td>$ ps -ef</td>
-          <td>command to get processes details in full format</td>
+          <td>$ ps</td>
+          <td>command to get processes</td>
         </tr>
         <tr>
-          <td>17</td>
+          <td>18</td>
+          <td>$ ps -ef</td>
+          <td>command to get all processes details in full format</td>
+        </tr>
+        <tr>
+          <td>19</td>
           <td>$ ps -ef | grep "amazon</td>
           <td>
             command to get only amazon processes details in full format, grep
@@ -196,7 +228,7 @@
           </td>
         </tr>
         <tr>
-          <td>18</td>
+          <td>20</td>
           <td>$ date | echo "today is"</td>
           <td>
             date is system command and sends to stdin, | cannot get the input
@@ -204,12 +236,53 @@
           </td>
         </tr>
         <tr>
-          <td>19</td>
+          <td>21</td>
           <td>$ awk</td>
           <td>
             it can give specific columns e.g. ps -ef | grep amazon | awk -F" "
             '{print $2}'
           </td>
+        </tr>
+        <tr>
+          <td>22</td>
+          <td>$ curl</td>
+          <td>command to get internet data or calling an API</td>
+        </tr>
+        <tr>
+          <td>23</td>
+          <td>$ WGET</td>
+          <td>command to downloads the content</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>$ sudo su -</td>
+          <td>
+            command to change user, substitute user todo, super hero root user
+            su switch user
+          </td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>$ sudo find / -name pam</td>
+          <td>
+            command to search file by mname pam, sudu to elivate permissions to
+            search across file system
+          </td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>
+            $ trap " echo dont use the the ctrl+c" SIGINT^C one more e.g. is
+            trap "rm -rf *^CSIGINt to delete the records which are half imported
+          </td>
+          <td>
+            command to trap signals, even after ctrl + c don't stop the command
+          </td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>$ kill -9 9999</td>
+          <td>command to kill the process 9999 it uses signal sigkill</td>
         </tr>
       </table>
       <li>$ touch nodeHealth.sh</li>
@@ -226,15 +299,212 @@
           # Version: v1 <br />
           ################ <br />
 
-          set -x # debug mode shows the commands and prints the output echo
-          "Print the disk space " <br />
+          set -x # debug mode shows the commands and prints the output echo set
+          -e # exit the script when there is an error set -0 pipefail "Print the
+          disk space " <br />
           df -h <br />
           echo "Print the memory " <br />
           free -g <br />
           echo "Print the cpu details " <br />
           nproc <br />
+
+          ps -ef | grep amazon | awk -F" " '{print $2}' <br />
+
+          curl
+          https://raw.githubusercontent.com/iam-veeramalla/sandbox/main/log/dummylog01122022.log
+          | grep ERROR <br />
+
+          WGET
+          https://raw.githubusercontent.com/iam-veeramalla/sandbox/main/log/dummylog01122022.log
         </code>
       </li>
+      <li>Shell Scripting QA</li>
+      <ol>
+        <li>List some of the commonly used shell commands?</li>
+        <ol>
+          <li>ls</li>
+          <li>cp</li>
+          <li>mv</li>
+          <li>mkdir</li>
+          <li>touch</li>
+          <li>vim</li>
+          <li>grep</li>
+          <li>find</li>
+          <li>top</li>
+          <li>sar</li>
+          <li>df</li>
+        </ol>
+        <li>Write a simple shell script to list all processes</li>
+        <ol>
+          <li>ps -ef</li>
+          <li>ps -ef | awk " " 'print{2}</li>
+        </ol>
+        <li>netcat</li>
+        <li>routetrace</li>
+        <li>Write a script to print only errors from a remote log</li>
+        <ol>
+          <li>Curl google.com | grep HREF</li>
+          <li>
+            Curl
+            https://raw.githubusercontent.com/iam-veeramalla/sandbox/main/log/dummylog01122022
+            | grep TRACE
+          </li>
+          <li>Curl, |, grep</li>
+          <li>
+            | is combining two commands, output of the first command to second
+            command
+          </li>
+        </ol>
+        <li>
+          Write a shell script to print numbers divided by 3 & 5 and not 15
+        </li>
+        <ol>
+          <li>Print even numbers -> divisible by 2</li>
+          <li>Print odd numbers -> not divisible by 2</li>
+          <li>Print numbers divisible by 3</li>
+          <li>Print prime numbers</li>
+          <li>
+            divide the question into multiple parts lets take numbers from 1 to
+            15
+          </li>
+          <li>Divisible by 3 -> 3, 6, 9, 12, 15</li>
+          <li>Divisible by 5 -> 5, 10, 15</li>
+          <li>And not divisible by 15 -> 15</li>
+          <li>vim samplescript.sh</li>
+          <li>
+            <code>
+              #!/bin/bash <br />
+              ## provide meta data <br />
+              # explain steps divisible by 3, divisible by 5, not divisible by
+              15 range is 1 to 100<br />
+              for i in {1..100}; do <br />
+              if ['expr $i % 3' == 0] || [`expr $i % 5' == 0] && [`expr $i % 15
+              != 0]; <br />
+              then <br />
+              echo $i <br />
+              fi <br />
+              done <br />
+            </code>
+            :wq
+          </li>
+          <li>$ chmod 777 samplescript.sh</li>
+          <li>$ sh samplescript.sh</li>
+        </ol>
+        <li>Write a script to print number of "S in mississippi</li>
+        <ol>
+          <li>vim number.sh</li>
+          <li>
+            <code>
+              #!/bin/bash <br />
+              x = mississippi <br />
+              grep -0 "s" <<<"$x" | wc -l # -o is only, wc is for wordcount, l
+              is line; <br />
+            </code>
+          </li>
+        </ol>
+        <li>How will you debug the shell script?</li>
+        <ol>
+          <li>set -x # run shell script in debug mode</li>
+        </ol>
+        <li>What is crontab in Linux? Can you provide an example of usage></li>
+        <ol>
+          <li>Your are a Linux admin, report node health</li>
+          <li>
+            Crontab like a scheduler which will run everyday on a scheduled time
+            for e.g 6 pm
+          </li>
+        </ol>
+        <li>How to open a read-only file?</li>
+        <ol>
+          <li>Vim test.sh to open a file</li>
+          <li>vim -r test.sh to open a file in read-only mode</li>
+        </ol>
+        <li>*What is the difference between soft and hard link ?</li>
+        <ol>
+          <li>Create a file and save a file</li>
+          <li>
+            If you want to reuse the same file multiple times we can use soft
+            and hard links
+          </li>
+          <li>
+            Use hard link if you want to modify and reuse existing file: ln
+            command is the to create hard link
+          </li>
+          <li>
+            even if the original copy is deleted hard link will work as it uses
+            the copy of the hard link
+          </li>
+          <li>
+            while soft link is not like that, if original file is deleted soft
+            link won't work
+          </li>
+          <li>we use soft links to create alais</li>
+        </ol>
+        <li>What is the difference between break and continue statements?</li>
+        <ol>
+          <li>BREAK is the braking the execution</li>
+          <li>
+            CONTINUE - continuning the execution (SKIP) -> Skip this and
+            continue the next
+          </li>
+          <li>3, 5, 15 (continue)</li>
+          <li>Break the execution on a specific condition</li>
+        </ol>
+        <li>What are some disadvantages of Shell scripting?</li>
+        <ol>
+          <li>
+            Errors are frequent and costly, and a single error can alter the
+            command
+          </li>
+          <li>The execution speed is slow</li>
+          <li>
+            Bugs or inadequacies in the language's syntax or implementation
+          </li>
+          <li>Large, complex tasks aren't well suited to it.</li>
+          <li>
+            Contrary to other scripting language, etc. it provides a minimal
+            data structure.
+          </li>
+          <li>Every time a shell is exectued, a new process is launched.</li>
+          <li>set -u</li>
+        </ol>
+        <li>What are the different types of loops and when to use ?</li>
+        <ol>
+          <li>for</li>
+          <li>while</li>
+          <li>do loop</li>
+        </ol>
+        <li>Is bash dynamic or statically typed and why?</li>
+        <ol>
+          <li>GO is statically typed language</li>
+          <li>Python is dynamic typed language</li>
+          <li>by default shell scripting is dynamically typed language</li>
+        </ol>
+        <li>Explain about a network troubleshooting utility?</li>
+        <ol>
+          <li>traceroute google.com</li>
+          <li>
+            this command give the different hops taken to reach the destination
+          </li>
+          <li>
+            tracepath also used to help to troubleshoot network issues tracepath
+            need to be installed
+          </li>
+          <li>tracepath does't not required root access</li>
+        </ol>
+        <li>How will you sort item of names in a file?</li>
+        <ol>
+          <li>linux has sort command to sort</li>
+        </ol>
+        <li>
+          How will you manage logs of a system that generate huge log files
+          everyday?
+        </li>
+        <ol>
+          <li>logrotate command</li>
+          <li>gzip, zip , tar and delete after 30 days</li>
+        </ol>
+      </ol>
     </ol>
   </body>
 </html>

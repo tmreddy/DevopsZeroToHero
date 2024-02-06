@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live AWS Project using SHEEL SCRIPTING for DevOps</title>
+  </head>
+  <body>
+    <h1>Live AWS Project using SHEEL SCRIPTING for DevOps</h1>
+    <ol>
+      <li>Write a script to report the usage of AWS in your project?</li>
+      <li>Advantages of cloud</li>
+      <ol>
+        <li>Reducing to maintenane</li>
+        <li>Cost effective</li>
+      </ol>
+      <li>Tracking the resource usage</li>
+      <li>$ bash</li>
+      <li>$ vim aws_resources_tracker.sh</li>
+      <li>
+        <code>
+          #!/bin/bash <br />
+          ################## <br />
+          # Author : mreddy <br />
+          # Date: 3-Feb <br />
+          # Version : V1 <br />
+          # This script will report the AWS resource usage <br />
+          # AWS S3m AWS EC2, AWS Lambda, AWS IAM <br />
+
+          set -x <br />
+
+          # list s3 buckets <br />
+          echo "Print list of s3 buckets" aws s3 ls <br />
+
+          # list ec2 instances <br />
+          echo "Print list of ec2 instances" <br />
+          aws ec2 describe-instances <br />
+          aws ec2 describe-instances | jq
+          '.Reservations[].Instances[].InstanceId' # list lambda functions
+          <br />
+          echo "Print list of functions" <br />
+          aws lambda list-functions
+          <br />
+          # list IAM users echo "Print list of users"
+          <br />
+          aws iam list-users
+        </code>
+      </li>
+      <li>$ chmod 777 aws_resoirces_tracker.sh</li>
+      <li>sh aws_resoirces_tracker.sh | more</li>
+      <li>
+        $ aws ec2 describe-instances | jq
+        '.Reservations[].Instances[].InstanceId'
+      </li>
+    </ol>
+  </body>
+</html>
