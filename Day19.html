@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenkins Zero to Hero</title>
+  </head>
+  <body>
+    <h1>Jenkins Zero to Hero</h1>
+    <ol>
+      <li>Install Jenkins on ec2</li>
+      <ol>
+        <li>
+          <a
+            href="https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero/tree/main"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Jenkins</a
+          >
+        </li>
+        <li>Launch Ubuntu instace</li>
+        <li>SSH to ec2 instance</li>
+        <li>Jenkins is a java based so we need to install java sdk</li>
+        <li>sudo apt update</li>
+        <li>sudo apt install openjdk-11-jre</li>
+        <li>java -version</li>
+        <li>
+          curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo
+          tee \ /usr/share/keyrings/jenkins-keyring.asc > /dev/null echo deb
+          [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+          https://pkg.jenkins.io/debian binary/ | sudo tee \
+          /etc/apt/sources.list.d/jenkins.list > /dev/null
+        </li>
+        <li>sudo apt-get update</li>
+        <li>sudo apt-get install jenkins</li>
+        <li>ps -ef | grep jenkins</li>
+        <li>
+          By default your ec2 instance will not accept any traffic from external
+          world
+        </li>
+        <li>
+          By default, Jenkins will not be accessible to the external world due
+          to the inbound traffic restriction by AWS. Open port 8080 in the
+          inbound traffic rules as show below.
+        </li>
+        <li>EC2 > Instances > Click on</li>
+        <li>In the bottom tabs -> Click on Security</li>
+        <li>Security groups</li>
+        <li>
+          Add inbound traffic rules as shown in the image (you can just allow
+          TCP 8080 as well, in my case, I allowed All traffic).
+        </li>
+        <li>On browser type public ip address of ec2 install with port 8080</li>
+        <li>
+          you can get password from this sudo cat
+          /var/lib/jenkins/secrets/initialAdminPassword
+        </li>
+        <li>Click on Install suggested plugins</li>
+        <li>Create first admin user</li>
+        <li>Jenkins installation is successful.</li>
+        <li>Jenkins master should be used only for scheduling</li>
+      </ol>
+      <li>Configure Jenkins and expose to outside world</li>
+      <li><img src="/Images/Jenkins.png" alt="Jenkins" /></li>
+      <li>Install docker on the same EC2 instance</li>
+      <li>$ sudo apt install docker.io</li>
+      <li>Grant Jenkins user and Ubuntu user permission to docker deamon.</li>
+      <li>
+        <code>
+          sudo su - <br />
+          usermod -aG docker jenkins <br />
+          usermod -aG docker ubuntu <br />
+          systemctl restart docker
+        </code>
+      </li>
+      <li>$su -jenkins</li>
+      <li>$ docker run hello-world</li>
+      <li>Restart the Jenkins</li>
+      <li>Use Docker as Agents against the VM approach</li>
+      <li>Advantages of using Docker as Agents</li>
+      <li>GitOps appraoch to deploy applications on to k8s</li>
+      <li>ArgoCD is declarative code continous delivery tool</li>
+      <li><a href="https://www.youtube.com/watch?v=rlFQgAqt3_Q&t=2s">ArgoCD</a></li>
+      <li>Explain the CI/CD process in your organization</li>
+      <li>How to check worker node health</li>
+      <li>Jenkins admistration</li>
+    </ol>
+  </body>
+</html>

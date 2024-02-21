@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything about Terraform</title>
+  </head>
+  <body>
+    <h1>Everything about Terraform</h1>
+    <ol>
+      <li>Manage any Infrastructure</li>
+      <li>Track your Infrastructure</li>
+      <li>Automate changes</li>
+      <li>Standardize configurations</li>
+      <li>Collaborate</li>
+      <li>
+        <a
+          href="https://github.com/iam-veeramalla/write_your_first_terraform_project"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Write your first terraform project</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/iam-veeramalla/terraform-zero-to-hero"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Terraform zero to hero</a
+        >
+      </li>
+      <li>Terraform life cycle</li>
+      <ol>
+        <li>
+          Write - Terraform configuration files, Define infrastructure in
+          configuration files
+        </li>
+        <li>
+          Plan - Review the changes tarraform will make to your infrastructure -
+          here dry run is done
+        </li>
+        <li>
+          Apply - Terraform provisions your infrastructure and update the state
+          file
+        </li>
+        <li>Destroy - to delete the infrastructure</li>
+      </ol>
+      <li>Terraform documentation is very good it has good examples</li>
+      <li>Install Terraform</li>
+      <ol>
+        <li>Mac</li>
+        <ol>
+          <li>Brew tap hasicorp/tap</li>
+          <li>brew install hashicorp/tap/terraform</li>
+          <li>brew upgrade hashicorp/tap/terraform</li>
+        </ol>
+        <li>Linux</li>
+        <ol>
+          <li>
+            sudo apt-get update && sudo apt-get install -y gnupg
+            software-properties-common
+          </li>
+        </ol>
+        <li>$ terraform -version</li>
+        <li>$ terraform -help</li>
+        <li>Terraform works in four steps</li>
+        <ol>
+          <li>Terraform init - Initialize</li>
+          <li>Terraform plan - dry run</li>
+          <li>Terraform apply</li>
+          <li>Terraform destroy</li>
+        </ol>
+        <li>vim main.tf</li>
+        <li>$ terraform init</li>
+        <li>
+          Always maintain inputs.tf for defining variables and outputs.tf files
+        </li>
+        <li>$ terraform plan</li>
+        <li>
+          Pre-request for terraform to work with AWS provider is to configure
+          aws cli configure
+        </li>
+        <li>$ terraform apply</li>
+        <li>
+          terraform.tfstate file maintaints the shate of the infrastructure it
+          created
+        </li>
+        <li>
+          You should store your state files remotly, not on your local machine
+        </li>
+        <li>It is not a good idea to store the state file in source control</li>
+        <li>Isolate and organize the state files to reduce the blast radius</li>
+        <li>Do not manipulate the state file</li>
+      </ol>
+      <li><img src="/Images/TerraformSetup.png" alt="TerraformSetup" /></li>
+      <li>Lock the terraform state files to avoid parallel executions</li>
+      <li>
+        <a
+          href="https://github.com/ozbillwang/terraform-best-practices"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Terrform best practices</a
+        >
+      </li>
+      <li>Terrafomr modules</li>
+      <ol>
+        <li>Exiting modules - to reuse the code</li>
+        <li>Write your own modules</li>
+      </ol>
+      <li>Problems with terraform</li>
+      <ol>
+        <li>State file is a single source of truth</li>
+        <li>
+          Manual changes to the cloud provider cannot be identified and
+          auto-corrected. Terrform is not bi-directional means if any one
+          changes the resources on aws Terraform will not know
+        </li>
+        <li>
+          Not a GitOps friendly tool. Don't play well with Flux or Argo CD
+        </li>
+        <li>Can become very complex and difficult to manage</li>
+        <li>Trying to position as a configuration management tool as well</li>
+      </ol>
+      <li>Interview questions</li>
+      <ol>
+        <li>what are modules</li>
+        <li>tell about your terraform setup</li>
+        <li>What are good practices</li>
+        <li>What are the problem with terraform</li>
+      </ol>
+      <li>Task: Prepare interview questions</li>
+      <li>Task play with terraform</li>
+    </ol>
+  </body>
+</html>
