@@ -26,7 +26,34 @@
       <li>Frontend container wants to connect to Backend container</li>
       <li>Container 1 wants to talk to container 2</li>
       <li>Container 1 is isolated with container 2</li>
-      <li></li>
+      <li>Docker creates a default bridge networking called docker0 virtual ethernet veth - 1. Bridge networking</li>
+      <li>2 . Host networking - this is very problematic as </li>
+      <li>3. Overlay networking - is very popular - if multiple host are there overlay networking is very helpful</li>
+      <li>both the containers are using bridgenetwroking so one container can talk to another container this is not secure</li>
+      <li>Networking isolation is not possible with out of box nature</li>
+      <li>Docker allows you to create custom bridge networks</li>
+      <li>$ docker network command to create custom bridge networks</li>
+      <li>$ docker run -d --name login nginx:latest</li>
+      <li>$ docker exec -it login /bin/bash</li>
+      <li>$ apt update</li>
+      <li>$ apt-get install iputils-ping -y : by defualt ping is not installed</li>
+      <li>$ ping -V</li>
+      <li>docker run -d --name logout nginx:latest</li>
+      <li>$ docker inspect login</li>
+      <li>$ docker inspect logout</li>
+      <li>in login container ping 172.17.0.3 [logout contaienr IP address]</li>
+      <li>$ docker exec -it logout /bin/bash</li>
+      <li>$ apt update</li>
+      <li>$ apt-get install iputils-ping -y : by defualt ping is not installed</li>
+      <li>$ ping -V</li>
+      <li>$ docker network ls - list networks</li>
+      <li>$ docker network rm test - remove test network</li>
+      <li>$ docker network create secure-network - create new bridge network</li>
+      <li>$ docker run -d --name finance --network=secure-network nginx:latest</li>
+      <li>$ docker inspect finance ip address is diffenet subnet from login and logout containers 172.20.0.2</li>
+      <li>$ ping 172.20.0.2 from container login will not be able to connect to finance container</li>
+      <li>$ docker run -d --name host-demo --network=host nginx:latest</li>
+      <li>$ docker inspect host-demo : there is no ipaddress as this container using host networking</li>
     </ol>
   </body>
 </html>
