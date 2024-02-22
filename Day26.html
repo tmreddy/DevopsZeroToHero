@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Stage Docker Builds</title>
+  </head>
+  <body>
+    <h1>Multi Stage Docker Builds</h1>
+    <ol>
+      <li>Multistage Docker builds</li>
+      <li>Distroless Images</li>
+      <li>
+        <a
+          href="https://github.com/iam-veeramalla/Docker-Zero-to-Hero/tree/main/examples/golang-multi-stage-docker-build"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Multi stage builds</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://github.com/GoogleContainerTools/distroless/tree/main/java"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Distroless</a
+        >
+      </li>
+      <li>Multistage builds docker file will have two or more FROM</li>
+      <li>From ubuntu as build</li>
+      <li>COPY --from build</li>
+      <li>Distroless image is a minimalstic image</li>
+      <li>Distroless will have more security</li>
+      <li>
+        <a
+          href="https://github.com/iam-veeramalla/Docker-Zero-to-Hero/tree/main/examples/golang-multi-stage-docker-build"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Multi stage docker build</a
+        >
+      </li>
+      <li>$ docker build -t simplecalculator</li>
+      <li>$ docker images | head -5</li>
+      <li>Size of the image is 861 MB</li>
+      <li>FROM scratch is the minimalstic distroless image</li>
+      <li>$ docker build -t Multistagecalculater</li>
+      <li>$ docker image</li>
+      <li>Size of the image is 1.83 MB</li>
+    </ol>
+  </body>
+</html>

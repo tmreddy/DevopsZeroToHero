@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker bind mounts & volumes</title>
+  </head>
+  <body>
+    <h1>Docker bind mounts & volumes</h1>
+    <ol>
+      <li>Containers are ephemeral in nature they are very shortlived</li>
+      <li>Inginx keep writing the logs to log files</li>
+      <li>If containers go down all the log files are deleted</li>
+      <li>If one container is dependent on another container writing data </li>
+      <li>There is file on host and container wants to access this file</li>
+      <li>Bind Mounts - Binds a folder on your container to your host</li>
+      <li>Volumes - Volumes offers a better lifecycle - Using docker commands we can create volume. Same volumes can be binded to multiple containers</li>
+      <li>$ df</li>
+    </ol>
+  </body>
+</html>

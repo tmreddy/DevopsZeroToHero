@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker Zero to Hero</title>
+  </head>
+  <body>
+    <h1>Docker Zero to Hero</h1>
+    <ol>
+      <li></li>
+        <a
+          href="https://github.com/iam-veeramalla/Docker-Zero-to-Hero"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Docker repo</a
+        >
+      </li>
+      <li><img src="/Images/ContainerVsVM.png" alt="ContainerVsVM" /></li>
+      <li><img src="/Images/Docker-Arch.png" alt="Docker-Arch"></li>
+      <li>Files and folders in a container can be read form the Docker-Zero-to-Hero repo</li>
+      <li>/bin</li>
+      <li>/sbib</li>
+      <li>/etc</li>
+      <li>/usr</li>
+      <li>/var for logs</li>
+      <li>/root</li>
+      <li>Files and folders that container use from host operating system</li>
+      <li>Network stack</li>
+      <li>Namespace</li>
+      <li>System calls</li>
+      <li>Control groups</li>
+      <li>Ubuntu offical docker image is 28.16 MB, the same with VM goes upto 2.5 GB</li>
+      <li>Docker is a containerization platform that provides easy way to containerize your application.</li>
+      <li>Podman also a containerization platform, Buildah, </li>
+      <li>Heart of docker is docker deamon</li>
+      <li>All docker commands are received by docker deamon</li>
+      <li>Lifecycle of docker-> from docker file ->$ docker build gives -> Docker image ->$ docker run gives -> container</li>
+      <li>Docker reduces complexcity</li>
+      <li>Docker will also increases effeciency</li>
+      <li>Docker Daemon: Daemon </li>
+      <li>Docker client: </li>
+      <li>Docker registry: docker hub -> share docker images to others</li>
+      <li>Create docker account in docker hub</li>
+      <li>Docker file -> is a set of instructions</li>
+      <li>Docker Images</li>
+      <li>First they have to create ec2 instance, install python</li>
+      <li>Create ec2 instance -> Login to ec2 instance -> install docker</li>
+      <li>$ sudo apt update</li>
+      <li>$ sudo install docker.io -y</li>
+      <li>You can install docker desktop on the laptop</li>
+      <li>$ sudo systemctl status docker -> to check docker is running or not</li>
+      <li>$ docker run hello-world -> it executes with the root user only</li>
+      <li>$ docker is a single processor</li>
+      <li>$ sudo usermod -aG docker ubuntu - adding ubuntu user to docker group</li>
+      <li>Even after this we need to restart</li>
+      <li>we need to logout and login back</li>
+      <li>$ docker run hello-world</li>
+      <li>User profile is not activated</li>
+      <li>$ Git clone https://github.com/iam-veeramalla/Docker-Zero-to-Hero.git</li>
+      <li>$ cd /docker-zero-to-hero</li>
+      <li>$ cat app.py</li>
+      <li>$ docker build -t tagname .</li>
+      <li>$ docker run -it imagename</li>
+      <li>$ docker login</li>
+      <li>$ docker push imagename</li>
+      <li>$ docker images</li>
+    </ol>
+  </body>
+</html>
