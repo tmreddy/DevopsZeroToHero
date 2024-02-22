@@ -12,11 +12,59 @@
       <li>Containers are ephemeral in nature they are very shortlived</li>
       <li>Inginx keep writing the logs to log files</li>
       <li>If containers go down all the log files are deleted</li>
-      <li>If one container is dependent on another container writing data </li>
+      <li>If one container is dependent on another container writing data</li>
       <li>There is file on host and container wants to access this file</li>
       <li>Bind Mounts - Binds a folder on your container to your host</li>
-      <li>Volumes - Volumes offers a better lifecycle - Using docker commands we can create volume. Same volumes can be binded to multiple containers</li>
+      <li>
+        Volumes - Volumes offers a better lifecycle - Using docker commands we
+        can create volume. Same volumes can be binded to multiple containers
+      </li>
       <li>$ df</li>
+      <li>$ docker create volume volumename</li>
+      <li>$ docker volume ls - list</li>
+      <li>
+        You can create volume on host or on S3 NFS external sources, we can take
+        backup
+      </li>
+      <li>$ docker -v [arguments seperated by :]</li>
+      <li>
+        $ docker --mount [verbose src , dest] this is better option instead of
+        docker -v
+      </li>
+      <li>
+        <a
+          href="https://github.com/iam-veeramalla/Docker-Zero-to-Hero"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Docker zero to hero</a
+        >
+      </li>
+      <li>$ docker volume create mreddy</li>
+      <li>$ docker volume ls</li>
+      <li>$ docker volume inspect mreddy</li>
+      <li>
+        $ docker volume rm mreddy -> removes volumes, with space we can delete
+        multiple volumes
+      </li>
+      <li>$ vim Dockerfile</li>
+      <li>FROM ubuntu :wq</li>
+      <li>$ docker build -t volumedemo .</li>
+      <li>$ docker volume create mreddy</li>
+      <li>$ docker run -d --mount source=mreddy,target=/app volumedemo</li>
+      <li>$ docker ps</li>
+      <li>$ docker inspect [container name]</li>
+      <li>
+        First we need to stop the container and delete the container and then
+        delete the volumes
+      </li>
+      <li>
+        <a
+          href="https://docs.docker.com/storage/volumes/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Docker volumes</a
+        >
+      </li>
     </ol>
   </body>
 </html>
