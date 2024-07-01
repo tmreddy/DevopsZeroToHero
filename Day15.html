@@ -16,8 +16,11 @@
       <li>$ ansible server one linux machine</li>
       <li>$ anisble target second linux machine</li>
       <li>$ ssh target machine privateip</li>
-      <li>$ ssh-copy-id target</li>
-      <li>$ shh-keygen</li>
+      <li>
+        $ ssh-copy-id targetIpAddress is the easiest way to configure passless
+        authentication
+      </li>
+      <li>$ shh-keygen - create public private keys</li>
       <li>$ ls /home/ubuntu/.ssh/</li>
       <li>$ cat /home/ubuntu/.ssh/id_rsa.pub</li>
       <li>$ copy the public key</li>
@@ -41,10 +44,13 @@
       <li>a for arguments, m for module</li>
       <li>$ ls -ltr & du -sh - size of the files</li>
       <li>difference between adhoc commands vs ansible playbook</li>
+      <li>$ ansible -i inventory all -m "shell" -a "nproc"</li>
+      <li>$ ansible -i inventory all -m "shell" -a "df"</li>
       <li>$vi inventory</li>
       <li>[dbservers] followed by ip addresses</li>
       <li>[webservers] followed by ip addresses</li>
       <li>[] are used to group servers</li>
+      <li>$ ansible -i inventory webservers -m "shell" -a "nproc"</li>
       <li>
         How can you groups or execute some commands on certain number of servers
       </li>
@@ -52,7 +58,7 @@
       <li>$ vi installNgix.yml</li>
       <li>
         <code>
-          --- <br />
+          --- this is make file as yml<br />
           - name: Install and start nigix <br />
           hosts: all <br />
           become: root <br />
@@ -74,23 +80,28 @@
         $ ansible-playbook -vvv -i inventory installngix.yml [vvv highest level
         of debugging we can give one v also]
       </li>
-      <li>Create 3 ec2 instances on AWS [Tarraform]</li>
-      <li>Configure 1 of those EC2 instance as master [Ansible]</li>
-      <li>Configure 2 other ec2 instances as worker [Ansible]</li>
-      <li>Ansible Roles</li>
+      <li>Create 3 ec2 instances on AWS [Tarraform is used to create infra]</li>
+      <li>
+        Configure 1 of those EC2 instance as master [Ansible is used to
+        configure]
+      </li>
+      <li>
+        Configure 2 other ec2 instances as worker [Ansible is used to configure]
+      </li>
+      <li>Ansible Roles :</li>
       <li>$ mkdir kubernetes</li>
       <li>$ kubernetes</li>
       <li>$ ansible-galaxy role init kubernetes</li>
       <li>$ ls</li>
       <li>
         <a
-          href="https://github.com/ansible/ansible-ex...
+          href="https://github.com/ansible/ansible-examples
         "
           >Ansible-examles</a
         >
       </li>
       <li>Meta folder is used for adding comments</li>
-      <li>Defauls folder is used to define variables</li>
+      <li>Defaults folder is used to define variables</li>
       <li>Vars folder is used to define variable like defaults</li>
       <li>Tests folder is used to write some tests</li>
       <li>Handlers folder used to send notifications in case of any errors</li>
@@ -98,7 +109,11 @@
       <li>Readme.md for write about the playbook</li>
       <li>files folder is used to store files</li>
       <li>templates folder is used to store templates</li>
-      <li><a href="https://www.youtube.com/watch?v=j5PgN0J3d7M&t=4s">Ansible interview questions</a></li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=j5PgN0J3d7M&t=4s"
+          >Ansible interview questions</a
+        >
+      </li>
     </ol>
   </body>
 </html>
