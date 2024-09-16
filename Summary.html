@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <title>Pratical Actionable Summary</title>
+  </head>
+  <body>
+    <h1>Devops life cycle</h1>
+    <ol>
+      <li>Build and generate the artifacts provided</li>
+      <!-- <ol>
+            <ul>Static code analysis is success</ul>
+            <ul>Code coverage is as per the standards e.g. 80%</ul>
+            <ul>Security checks for vunarabilities</ul>
+        </ol> -->
+      <li>Get the server</li>
+      <li>Make the server as application server</li>
+      <li>Deploy the artifacts on the application server</li>
+      <li>Test the application - health check</li>
+      <li>Monitor the application server</li>
+    </ol>
+    <h2>Learned topics on <i>27-Aug-2024</i></h2>
+    <h4>
+      <u
+        >Install AWS CLI, Configure AWS crendentials and execute some AWS
+        commands</u
+      >
+    </h4>
+    <ol>
+      <li>How to create EC2 instance</li>
+      <li>How to SSH to EC2 instance</li>
+      <li>How to generate keyPair.pem file</li>
+      <li>How to use keyPair.pem</li>
+      <li>Need to change permission for pem file</li>
+      <li>$ chmod 600 /users/mreddy/downloads/test.pem</li>
+      <li>$ ssh -i /users/mreddy/downloads/test.pem ubuntu@3.92.205.153</li>
+      <li>
+        Automation: the use or introduction of automatic equipment in a
+        manufacturing or other process or facility: unemployment due to the
+        spread of automation | the automation of office tasks.
+      </li>
+      <li>
+        Infrastructure: the basic physical and organizational structures and
+        facilities (e.g. buildings, roads, power supplies) needed for the
+        operation of a society or enterprise:
+      </li>
+      <li>AWS CLI commands</li>
+      <ol>
+        <li>$ aws --version command to get aws cli version</li>
+        <li>$ aws configure command to configure aws cli</li>
+        <li>$ aws s3 ls command to get list of S3 buckets</li>
+        <li>$ aws s3 mb s3://bucketName command to make bucket</li>
+      </ol>
+    </ol>
+    <h2>Installed Softwares on my dev machine</h2>
+    <ol>
+      <li>VS code</li>
+      <li>AWS CLI - $ brew install aws</li>
+      <li>Configured AWS CLI - $ aws configure</li>
+      <li>Provide access key, secrate key, region and format</li>
+    </ol>
+    <h2>Accounts opened on web</h2>
+    <ol>
+      <li>Opened AWS account</li>
+      <li>Created user</li>
+      <li>Enabled MFA for root user and user</li>
+    </ol>
+    <h2>Learned topics on <i>28-Aug-2024</i></h2>
+    <ol>
+      <li>
+        $ aws configure list - command to get the list of aws configured
+        profiles
+      </li>
+      <li>$ sudo apt update - command to update the ubuntu os</li>
+      <li>$ ls - command to list files</li>
+      <li>$ pwd - command to know the present working direcotry</li>
+      <li>$ cd [folderName] - command to move to folder</li>
+      <li>$ cd .. - command to come to previous folder</li>
+      <li>$ cd ../.. - command to go back to 2 previous directory</li>
+      <li>
+        $ ls -ltr - command to get details of the files and directories with
+        owner and timestamps
+      </li>
+      <li>$ touch [fileName] - command to create a file</li>
+      <li>
+        $ vi/vim [fileName] - command to create and open file, press i for
+        insertion mode and esc : wq! to save and exit
+      </li>
+      <li>$ cat [fileName] - command to see the content of the file</li>
+      <li>$ mkdir [folderName] - command to create a folder</li>
+      <li>$ rm [fileName] - command to remove a file</li>
+      <li>$ rm -rf [folderName] - command to remove a folder</li>
+      <li>$ free -g - command to get the memory</li>
+      <li>$ nproc - command to get the number of processors</li>
+      <li>$ df - command to get the disk details</li>
+      <li>
+        $ top - used to get all the details of memory, diskspace and processors
+      </li>
+      <li>$ history - to get the list of executed shell command</li>
+      <li>$ man ls - manual for ls command this is like help on ls</li>
+      <li>$ sh fist.sh - comand to execute shell script</li>
+      <li>$ ps - command to get the shell type</li>
+      <li>$ date - command to get current date</li>
+      <li>
+        $ echo - Prints a string of text, or value of a variable to the
+        terminal.
+      </li>
+      <li>$ ps - command to get the shell type</li>
+      <li>$ which [shellType] - command to get the shell type path</li>
+      <li>$ which asw - command to get aws cli path</li>
+      <li>$ mv first second - command to rename</li>
+      <li>$ cp first second - command to copy first file to second</li>
+      <li>
+        scp -i ~/Developer/Lakshmi/Ec2pemfile.pem
+        ~/Developer/Lakshmi/DevOps/DevOpsZeroToHero/shellscripts/bash.sh
+        ubuntu@44.203.175.124:~/files - command to copy files from local dev
+        machine to ec2 instance in files folder scp secure copy
+      </li>
+      <li>
+        $ chmod u+x run_all.sh - this command adds execution permission to the
+        current user on this file.
+      </li>
+    </ol>
+    <h2>Learned topics on <i>10-Sep-2023</i></h2>
+    <ol>
+      <li>
+        <code>$ head filename </code>Command to shows first 10 lines of content
+      </li>
+      <li>
+        <code>$ docker run -it imagename/imageid /bin/bash </code> This command
+        is used to create a container with giving image and run /bin/bash
+        command
+      </li>
+    </ol>
+    <h2>Learned topics on <i>11-Sep-2023</i></h2>
+    <ol>
+      <li>
+        <code>$ ls -l filename </code>Command to list permissions and creation
+        date of the file
+      </li>
+      <li>
+        <code>$ mkdir -p reports </code>This command is to create directory with
+        name reports, -p if directory exists we will not get error.
+      </li>
+      <li>
+        <code>$ chmod u-x createReport.sh </code>This command removed executable
+        permission to createReport.sh
+      </li>
+      <li>
+        <code>$ chmod a+x createReport.sh </code>This command adds executable
+        permission to createReport.sh for all U stands for user
+      </li>
+      <li>
+        <code>$ greetings="Hello" </code>This declares a variable by name
+        greetings ans assigning a value of "Hello", no spaces between variable
+        name = and value
+      </li>
+      <li>
+        <code>$ $greetings</code> This command is used to print the value of the
+        variable greetings $ is used to access the variable
+      </li>
+      <li>
+        <code>$ echo $greetings </code>This code is used to echo the value of
+        the var
+      </li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell script basics</title>
+</head>
+<body>
+    <h1>Shell scripting basics</h1>
+    <ol>
+    <link rel="stylesheet" href="/CSS/index.css" />
+        <li>A bash script is a file containing a sequence of commands that are executed by the bash program line by line. </li>
+        <li>By saving these commands in a script, you can repeat the same sequence of steps multiple times and execute them by running the script.</li>
+        <li>The term "shell" refers to a program that provides a command-line interface for interacting with an operating system. Bash (Bourne-Again SHell) is one of the most commonly used Unix/Linux shells and is the default shell in many Linux distributions.
+        </li>
+        <li>When a shell is used interactively, it displays a $ when it is waiting for a command from the user.
+        </li>
+        <li>
+        If the shell is running as root (a user with administrative rights), the prompt is changed to #. 
+        </li>
+        <li>Although Bash is a type of shell, there are other shells available as well, such as Korn shell (ksh), C shell (csh), and Z shell (zsh). Each shell has its own syntax and set of features, but they all share the common purpose of providing a command-line interface for interacting with the operating system.</li>
+        <li>You can determine your shell type using the ps command:</li>
+        <li>Adding the Shebang
+            Bash scripts start with a shebang. Shebang is a combination of bash # and bang ! followed by the bash shell path. This is the first line of the script. Shebang tells the shell to execute it via bash shell. Shebang is simply an absolute path to the bash interpreter.</li>
+        <li>#!/bin/bash</li>
+        <li>Script naming conventions By naming convention, bash scripts end with .sh. However, bash scripts can run perfectly fine without the sh extension.</li>
+        <li>You can find your bash shell path (which may vary from the above) using the command:</li>
+        <li>Executing the bash script To make the script executable, assign execution rights to your user using this command:
+            <code>chmod u+x run_all.sh</code>
+        </li>
+        <ol>
+            <li>chmod modifies the ownership of a file for the current user :u.</li>
+            <li>+x adds the execution rights to the current user. This means that the user who is the owner can now run the script.</li>
+            <li>run_all.sh is the file we wish to run.</li>
+        </ol>
+        <li>You can run the script using any of the mentioned methods:</li>
+        <ol>
+            <li>sh bash.sh</li>
+            <li>bash bash.sh</li>
+            <li>./bash.sh</li>
+        </ol>
+        <li>Comments start with a # in bash scripting. This means that any line that begins with a # is a comment and will be ignored by the interpreter.</li>
+        <li>Variables and data types in Bash</li>
+        <ol>
+            <li>Variables let you store data. You can use variables to read, access, and manipulate data throughout your script.</li>
+            <li>There are no data types in Bash. In Bash, a variable is capable of storing numeric values, individual characters, or strings of characters.</li>
+            <li>In Bash, you can use and set the variable values in the following ways:</li>
+            <ol>
+                <li>Assign the value directly: country=India</li>
+                <li>Assign the value based on the output obtained from a program or command, using command substitution. Note that $ is required to access an existing variable's value. newCountry = $country</li>
+                <li>To access the variable value, append $ to the variable name.</li>
+            </ol>
+        </ol>
+        <li>Variable naming conventions: In Bash scripting, the following are the variable naming conventions:</li>
+        <ol>
+            <li>Variable names should start with a letter or an underscore (_).</li>
+            <li>Variable names can contain letters, numbers, and underscores (_).</li>
+            <li>Variable names are case-sensitive.</li>
+            <li>Variable names should not contain spaces or special characters.</li>
+            <li>Use descriptive names that reflect the purpose of the variable.</li>
+            <li>Avoid using reserved keywords, such as if, then, else, fi, and so on as variable names.</li>
+        </ol>
+        <li>Input and output in Bash scripts</li>
+        <ol>
+            <li>Reading the user input and storing it in a variable read command read entered_name</li>
+            <li>Reading from a file <code>while read line
+                do
+                  echo $line
+                done < input.txt</code> </li>
+            <li>Command line arguments: In a bash script or function, $1 denotes the initial argument passed, $2 denotes the second argument passed, and so forth.</li>
+        </ol>
+        <li>Displaying output</li>
+        <ol>
+            <li>Printing to the terminal: echo "Hello, World!"</li>
+            <li>Writing to a file: echo "This is some text." > output.txt</li>
+            <li>Appending to a file: echo "More text." >> output.txt</li>
+            <li>Redirecting output: ls > files.txt</li>
+        </ol>   
+        <li>Conditional statements (if/else)</li>
+        <ol>
+            <li>Expressions that produce a boolean result, either true or false, are called conditions. There are several ways to evaluate conditions, including if, if-else, if-elif-else, and nested conditionals.
+            </li>
+            <li><code>if [[ condition ]];
+                then
+                    statement
+                elif [[ condition ]]; then
+                    statement 
+                else
+                    do this by default
+                fi
+                </code></li>
+            <li>We can use logical operators such as AND -a and OR -o to make comparisons that have more significance.</li>
+            <li><code>#!/bin/bash
+
+                echo "Please enter a number: "
+                read num
+                
+                if [ $num -gt 0 ]; then
+                  echo "$num is positive"
+                elif [ $num -lt 0 ]; then
+                  echo "$num is negative"
+                else
+                  echo "$num is zero"
+                fi</code></li>
+        </ol>
+        <li>Looping and Branching in Bash</li>    
+        <ol>
+            <li>While loops check for a condition and loop until the condition remains true. We need to provide a counter statement that increments the counter to control loop execution.</li>
+            <li>In the example below, (( i += 1 )) is the counter statement that increments the value of i. The loop will run exactly 10 times. <code>#!/bin/bash
+                i=1
+                while [[ $i -le 10 ]] ; do
+                   echo "$i"
+                  (( i += 1 ))
+                done</code></li>
+            <li>For loop: The for loop, just like the while loop, allows you to execute statements a specific number of times. Each loop differs in its syntax and usage.</li>
+            <code>
+
+                #!/bin/bash
+
+                for i in {1..5}
+                do
+                    echo $i
+                done
+            </code>
+            <li>Case statements: In Bash, case statements are used to compare a given value against a list of patterns and execute a block of code based on the first pattern that matches. The syntax for a case statement in Bash is as follows:</li>
+            <li><code>case expression in
+                pattern1)
+                    # code to execute if expression matches pattern1
+                    ;;
+                pattern2)
+                    # code to execute if expression matches pattern2
+                    ;;
+                pattern3)
+                    # code to execute if expression matches pattern3
+                    ;;
+                *)
+                    # code to execute if none of the above patterns match expression
+                    ;;
+            esac</code></li>
+            <li>Here, "expression" is the value that we want to compare, and "pattern1", "pattern2", "pattern3", and so on are the patterns that we want to compare it against.
+
+                The double semicolon ";;" separates each block of code to execute for each pattern. The asterisk "*" represents the default case, which executes if none of the specified patterns match the expression.</li>
+            <li><code>
+                fruit="apple"
+
+                case $fruit in
+                    "apple")
+                        echo "This is a red fruit."
+                        ;;
+                    "banana")
+                        echo "This is a yellow fruit."
+                        ;;
+                    "orange")
+                        echo "This is an orange fruit."
+                        ;;
+                    *)
+                        echo "Unknown fruit."
+                        ;;
+                esac
+            </code></li>
+        </ol>
+        <li>How to Schedule Scripts using cron: Cron is a powerful utility for job scheduling that is available in Unix-like operating systems. By configuring cron, you can set up automated jobs to run on a daily, weekly, monthly, or specific time basis. The automation capabilities provided by cron play a crucial role in Linux system administration.</li>
+        <li># Cron job example
+            * * * * * sh /path/to/script.sh</li>
+        <li>Here, the *s represent minute(s) hour(s) day(s) month(s) weekday(s), respectively.</li>
+        <li><img src="/Images/CornJob.png" alt="cornjobs" width="700"></li>
+    </ol>
+</body>
+</html>
