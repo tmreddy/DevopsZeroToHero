@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linux Fundamentals</title>
+  </head>
+  <body>
+    <h1>Linux Fundamentals</h1>
+    <ol>
+      <li>The command line</li>
+      <ol>
+        <li>
+          Efficiency - Going through the wizard to launce EC2 repeted steps
+        </li>
+        <li>Infrastructure automation - AWS CLI</li>
+      </ol>
+      <li>What we learn in this course?</li>
+      <ol>
+        <li>Core command line tools</li>
+        <li>Help repsources</li>
+        <li>Configure the linux environment</li>
+        <li>Command line syntax</li>
+        <li>The Linux file system</li>
+        <li>Linux network connectivity</li>
+        <li>Bash scripts</li>
+        <li>
+          <a
+            href="https://bootstrap-it.com/linux-cli"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linux CLI</a
+          >
+        </li>
+      </ol>
+      <li>
+        <code>$ man wget</code> man stands for mannual, this command gets the
+        manuall for wget
+      </li>
+      <li>
+        <code>$ wget wordpress.org/latst.tar.gz</code> download the latest
+        version of wordpress/li>
+      </li>
+      <li>
+        <code>$ sudo apt install man-db </code> to install additional man
+        mannual
+      </li>
+      <li><code>$ sudo apt update</code> command to update the ubuntu</li>
+      <li><code>$ sudo apt install info </code> command to install info</li>
+      <li>Sudo will elevate the permissions to root</li>
+      <li>
+        <code>$ info </code> command to get the installed info on the ubuntu
+      </li>
+      <li>
+        <code>$ info wget example simple </code> command to the documentation
+        for wget with simple example
+      </li>
+      <li>Many files in the usr/share/doc directory tree</li>
+      <li>
+        <code> cd /usr/share/doc/wget/ </code> command to go the wget document
+        folder
+      </li>
+      <li><code>$ ls </code> command will list the files in wget folder</li>
+      <li>
+        <code>$ wget --help | less</code> command to get the help for wget and
+        pipe the output to less that'll let us read it at out own speed
+      </li>
+      <li>
+        <code>$ type wget</code> The type command can tell you how ta specified
+        word would be interpreted by Bash.
+      </li>
+      <li>The Linux Terminal</li>
+      <ol>
+        <li>
+          Whenever you open a terminal window from a Linux desktop, a new shell
+          session is created for you using the defaults settings in a special
+          hidden file in your home directory called .bashrc
+        </li>
+        <li>
+          <code>$ ls -a </code> command to list hiddien files and directories
+          also
+        </li>
+        <li>
+          The dot the beginning of the file name indicates that it's hidden.
+        </li>
+        <li>
+          <code>less .bashrc </code> this command prints the contents of .bashrc
+          one screen at a time.
+        </li>
+        <li>
+          This file will only be read and applied to non-login shell sessions
+          like this one. We call it non-login because since we're already logged
+          into out GUI desktop. there's no need to log in a second time.
+        </li>
+        <li>
+          I were to access my account from a remote computer by way of say, an
+          SSH secure shell session, I would need to og in with my account name
+          and password. The shell that would be created for me, which as you can
+          probably predit would be called a login shell, will get its values
+          from one of a number of different files, including .profile. If you
+          read through the .profile file, you'll find that if a .bashrc file
+          exists, then its settings will also be used for the shell environment.
+        </li>
+        <li>
+          There's also a .profile file lurking in the /etc directory where
+          systemwide shell settings are configured. Even though we're going to
+          work with the Bash shell for this course, you should be aware that
+          there are other shells, like Dash and ksh
+        </li>
+        <li>
+          The functional differences between them are generally only relevant to
+          very specific use cases, so they should all work the same for most
+          general administation operations.
+        </li>
+        <li>
+          All shells will interpret commands and objects names as case
+          sensitive. Most commands will use lowercase. Since the Linux command
+          line is case sensitive, trying to read my
+        </li>
+      </ol>
+      <li>Linux Command Syntax Patterns and Shortcuts</li>
+      <ol>
+        <li>Invoking a command always starts with the command name.</li>
+        <li>
+          In some cases, as with the ls command, just the name on its own is
+          enough to return a result, however, you'll usually need to add some
+          combination of arguments and parameters to get the most out of a tool.
+        </li>
+        <li>
+          You've already seen how adding -a to the ls command will display all
+          the files in a directory, even hidden files, but you can get the same
+          results using two dashes and the word all.
+        </li>
+        <li>
+          <code>$ ls --all </code> command to display all the files and folders
+          including hidden files
+        </li>
+        <li><code>$ man ls </code> command to get the mannual of ls</li>
+        <li>
+          There are exceptions to that argument syntax usage. The networking
+          administation ip command, for instance, can use the addr argument
+          without a dash to show the IP addresses associated with your system's
+          network.
+        </li>
+        <li>
+          <code>$ ip addr </code> Command to get the list of IP addressess
+          associated
+        </li>
+        <li>This can also shortned to a simple a, also without a dash</li>
+        <li><code>$ ip a </code> same as above command.</li>
+        <li>
+          <code>$ ls -l </code> command to list the contents in long format
+          displaying object permissions, ownership, size and age details.
+        </li>
+        <li>
+          <code>$ ls -lht </code> Running the same command with the h command
+          will give us the file size in human readable format. And adding t will
+          organize the objects in descending chronological order.
+        </li>
+        <li>
+          Bash understand the context of the command, so it will try to auto
+          complete on tab
+        </li>
+        <li>
+          <code>cd n </code> command to change directory starts with n and
+          clicking on tab bash will give options directories which starts with n
+        </li>
+        <li>
+          clicking on cd anywhere you are, you will be redirected to users home
+          directory.
+        </li>
+        <li>
+          You can cycle through recent commands by hitting the up arrow key.
+          With an old command displayed, you only need to hit enter and run it
+          again.
+        </li>
+        <li>
+          The 1000 most recent commands are stored in a hidden file in your
+          users home directory called bash_history, and can be seen by running
+          the history command.
+        </li>
+        <li>
+          <code>$ history </code> command to display all the last 1000 commands
+          executed on the shell window.
+        </li>
+        <li>
+          There are some characters known as regular expressions, that the shell
+          won't necessarily interpert the way you might expect. One example is a
+          simple space, other example include the dot, squre brackets, the
+          asterisk, and the question mark.
+        </li>
+        <li>
+          Bash will often interpret those as command instructions rather than
+          simple characters.
+        </li>
+        <li>
+          Suppose you decided to create a file with a name this is my story.
+        </li>
+        <li>
+          <code>$ touch this is my story </code> this command is used to create
+          file, here touch will create this, is, my, story files
+        </li>
+        <li>
+          <code>$ touch "This is my story" </code> this command will create only
+          one file with name "This is my story" this tell Linux that it's all
+          one string.
+        </li>
+        <li>
+          Another way to force Bash to preserve the literal values of your input
+          is to use the backslash as an ecepace character.
+        </li>
+        <li>
+          <code>$ touch another\ four\ word\ name</code> this command uses \ to
+          preserve the space
+        </li>
+        <li>
+          The truth is that you might be better off in the long run getting into
+          the habbit of creating single word file names by using dashes or
+          underscores. It can simplity you file management.
+        </li>
+        <li><code>$ touch another-four-word-name </code></li>
+      </ol>
+      <li>Navigating the Linux File System</li>
+      <ol>
+        <li>Administrating the file system</li>
+        <ol>
+          <li>
+            When identifying directory trees, we use the forward slash; thus the
+            absolute address of, say a directory called scripts in my home
+            directory would be /home/ubuntu/scripts where ubuntu is the name of
+            my account.
+          </li>
+          <li><code>$ pwd</code> present work directory</li>
+          <li><code>$ cd </code> will always go to the home directory</li>
+          <li><code>$ mkdir data</code> command to create data directory</li>
+          <li>
+            <code>$ cd data</code> command to change directory to data directory
+          </li>
+          <li><code>$ nano file1 </code> create or edit file1</li>
+          <li>
+            <code>$ touch file2 file3 file4 file5 </code> creates four new files
+          </li>
+          <li><code>$ mkdir newdata </code> creates new directory newdata</li>
+          <li>
+            <code>$ cop file1 newdata/</code> we can use cp, this will create a
+            copy of the file1 file, but it'd be boring to have to repeate that
+            command for each of the files in our series, so we'll use what's
+            called globbing, while globbing may sound like the result of some
+            radioactivity experiment from the 1950s that went horribly worng.
+            It's acually just a way of spreading an action across a global
+            target.
+          </li>
+          <li>
+            <code>$ c file* newdata/ </code> so typing cp file* newdata will
+            copy all the files that beging with file no matter what characters
+            follow that string.
+          </li>
+          <li><code>$ cd newdata </code> change directory to newdaya</li>
+          <li>
+            <code>$ ls </code> command to see the list of files and directories.
+          </li>
+          <li>
+            You can also limit the action to a single character using the
+            question mark.
+          </li>
+          <li>lets create a couple of more files in the current directory</li>
+          <li>
+            <code>$ touch file11 file12</code> command to create two new files
+            with file11 and file12 as their names
+          </li>
+          <li>
+            <code>$ rm file? </code> command to delete or remove all files
+            starting with file, but having only a single digit extra. You can
+            see that file11 and file12 are still there.
+          </li>
+          <li>
+            <code>$ rm file* </code> then those two files are also removed.
+          </li>
+          <li>
+            <code>$ mv ../file* .</code> mv command is used to move the files
+            notice how we use two dots to point to the directory above us, file
+            and an asterisk to cover all the files beginning with the string
+            file, and a single dot to tell the Linux that the target directory
+            is the onc we're currently in.
+          </li>
+          <li>
+            <code>$ rm * </code> now it's time to clean up our toys. I'll use rm
+            and an asterisk to remove all the files in our newdata directory.
+          </li>
+          <li>
+            be careful with this, by the way, because you can sometimes end up
+            deleting a lot more than you expected, and you should definitely
+            keep in mind the Linux terminal has no trashcan from which deleted
+            files can be restored.
+          </li>
+          <li>
+            <code>rmdir newdata/ </code> Now we'll cd back up the data and run
+            rmdir to remove the new data directory.
+          </li>
+        </ol>
+        <li>Searching the file system</li>
+        <ol>
+          <li>
+            A busy Linux system can contain a lot of files. How much is a lot?
+            Wll my Linux workstation has more than 1.2 million of them. Tracking
+            down individual system and configuration files is going to be
+            important form time to time, but visually scanning for them one
+            directory at a time can be unbelievably tedious.
+          </li>
+          <li>The quickest and easiest way to fine files is using locate.</li>
+          <li>
+            Suppose you couldn't remember where they've hidden the configuration
+            file, controlling the way the add user command works.
+          </li>
+          <li>
+            You could simply run locate using adduser as a parameter. The most
+            likely candidate from the list is the one in the etc directory,
+            which happens to be where most configuration files are kept.
+          </li>
+          <li>
+            <code>$ locate adduser </code> command used to locate all the files
+            where adduser is used in the filesystem.
+          </li>
+          <li>
+            <code>$ sudo nano /etc/adduser.config </code> command to edit and
+            see the content of adduser.config file under /etc folder.
+          </li>
+          <li>
+            Locate works so quickly because it simply needs a precompiled index
+            of all the files and directories on the system.
+          </li>
+          <li>
+            If you're looking for files that may have been added quite recently,
+            you might need to update the index.
+          </li>
+          <li>
+            You can do that by running updatedb, That'll get you going when you
+            need to find a file, but since pretty much all the action in Linux
+            is controled through file contents, you'll need to a way to search
+            inside those files.
+          </li>
+          <li>
+            <code>$ sudo updatedb </code> command to update the index of the
+            file system on Limux
+          </li>
+          <li>
+            As an example, many programs will regularly generate thousands or
+            even millions of text messages that are written to log files so that
+            later you can revisit critical events. To manage the problem of
+            working with all this data, Bash comes with a full set of text
+            manipulation tools for reading, transforming, and redirecting text.
+          </li>
+          <li>
+            We've already seen how less reads a file and displays it one screen
+            at a time. Rather than printing the text directly to the screen,
+            however it can also search and, if desired, manipulate the contents
+            of a file by sending it through what's called a pipe.
+          </li>
+          <li>
+            Multiple text maniplulation tool;s can then be invoked to filter the
+            streaming text.
+          </li>
+          <li>
+            Here's a simple example, We'll use cat to read the group file that
+            containes information about system groups and that lives in the etc
+            directory
+          </li>
+          <li>
+            <code>$ cat /etc/group | grep ubuntu </code> This command prints the
+            content of etc/group and pipe with the content which contains the
+            word ubuntu
+          </li>
+          <li>
+            <code>cat /etc/group | grep ubuntu >> newfile</code> this command
+            oupputs the content to new file instead of displaying on the screen
+          </li>
+          <li>
+            <code>$ cat newfile </code> we will get the oupput in the new file
+          </li>
+          <li>
+            By the way new file was created as the process I wou;d just use the
+            existing file.
+          </li>
+          <li>
+            The only thing is that if I would have used only one right arrow for
+            the redirect rather than two, the text selected by the grep would
+            have overwritten any existing contents of the file. Two arrow will
+            append the text to the end of the file. That's an important
+            distinction that you should keep in mind. Since group is a rather
+            long file. This is a good wau to illustate how we can use some more
+            tolls.
+          </li>
+          <li>
+            Head by default, will print only the first 10 lines of the file, and
+            tail will print only the last 10 lines.
+          </li>
+          <li>
+            <code>$ head /etc/group </code> command prints only first lines of
+            the file
+          </li>
+          <li>
+            <code>$ tail /etc/group </code> command prints only last 10 lines of
+            the file.
+          </li>
+          <li>
+            Of course, the real value of a file-like group is in the sata that
+            it contains, you can see that each line follows a similiar pattern,
+            first a group name, then a colon and an x, another colon and the
+            group ID number. It might be useful to be able to pull out one field
+            of data form each line and process them all together, for that,
+            we'll use cut. -d: tells Linux to use every colon as a field
+            delimiter, meaning to consider every appearance of a colon, as the
+            end of one field and the beginning of another. F3 is our way of
+            saying that we're onlu interested in processing the contents of the
+            third field of each line. As you can see, this successfuly printed
+            only the ID number of each group
+          </li>
+          <li>
+            <code>$ cut -d: -f3 </code> says they we're only interested in
+            processing the contents of the third field of each line.
+          </li>
+          <li>
+            <code>$ cut -d: -f3 | sort -n</code> This command will sort the
+            output
+          </li>
+          <li>
+            <code>$ cut -d: -f3 | sort -rn</code> This command will sort the
+            output in decending r stands for reverse
+          </li>
+          <li><code>$ wc /etc/group/</code> wc stands for word count.</li>
+          <li>Standard streams</li>
+          <ol>
+            <li>Standard Input (Name) stdin (Designation) 0 (Numaric Code)</li>
+            <li>
+              Standard Output (Name) stdout (Designation) 1 (Numaric Code)
+            </li>
+            <li>Stardard error (Name) stderr (Designation) 2 (Numaric Code)</li>
+          </ol>
+          <li>
+            Stdin comming from keyboard through which it's made availiable to
+            Bash.
+          </li>
+          <li>
+            <code>$ mysql -u root -p < mydatabase.sql </code> This example will
+            open the MySql database engine as the root user and import the
+            mydatabase.sql database file using the left arrow character to tell
+            Bash where to find the file.
+          </li>
+          <li>
+            Stdout will, by default, be sent to the terminal display.
+            Redirecting stdout to a file, as you saw a bit earlier, Rememberm,
+            one right arrow will earse any existing test in the file and replace
+            it with the input, and two arrows will append the new text.
+          </li>
+          <li><code>$ echo "Hello" </code> stdout to the terminal display</li>
+          <li>
+            <code>$ echo "Hello" >> myfile.txt </code>stdout to the myfile.txt
+            will append the new line.
+          </li>
+          <li>
+            Finally, stderr will write any errors generated by a command. By
+            default, those errors will go the terminal display.
+          </li>
+          <li>
+            <code>$ wget pluralsight.comm </code> wget for an incorrect address
+            will throw an error and will be displayed on the terminal display.
+          </li>
+          <li>
+            <code>$ wget pluralsight.comm 2> errorfile.txt </code> number 2 is a
+            designation for stderr, this will write to the errorfile.txt
+          </li>
+        </ol>
+        <li>Working with archives</li>
+        <ol>
+          <li>
+            On Linux, the most common tool for archiving and compression is tar,
+            which once upon a time stood for tape archive. Tape archives might
+            have largely disappeared, but tar is just as useful as ever.
+          </li>
+          <li>
+            latest.tar.gz double extention .tar and .gz, Tar tells us that this
+            file is actually a tar archive, and .gz tells us that it's also
+            compressed with the gzip algotithm.
+          </li>
+          <li>
+            Most Linux and UNIX packages are packed using these two tools,
+            although there are other compression algorithms available. To unpack
+            the archive, we run tar with xzf as arguments, and then the name of
+            the archive itself.
+          </li>
+          <li>
+            <code>$ tar xzf latest.tar.gz</code> x means that we want tar to
+            extract the files from the archive, z tell tar that it's compressed,
+            or zipped, and f which stands for file, means that the file name
+            will follow immediately.
+          </li>
+          <li>
+            Taking another look shows us that a new directory name WordPress has
+            been created.
+          </li>
+          <li>
+            <code>$ cd WordPress/</code> looking inside displays newly extracted
+            files and subdirectories in the exact same format they had when
+            archived in the first place.
+          </li>
+          <li><code>$ ls </code> list the files in the WordPress</li>
+          <li>
+            If you'd like to repack the files or any other set of files and
+            directories, we perform the process in reverse, here though instead
+            of x to extract, we use c for create. The name of the archive we
+            want to create should follow the f, which still stands for file and
+            the files we want to include in the archive, the WordPress directory
+            in this case, should come last. Running ls -l shows us our new
+            archive, but it also tells us that the file size is a little
+            different form the original.
+          </li>
+          <li>
+            <code>$ tar czf newarchive.tar.gf workpress/</code> command to
+            compress a directory
+          </li>
+          <li>
+            You can still compress the file directly using gzip, we'll
+            illustrate that by creating a simple tar file without the z. Then
+            we'll run the gzip using only the file name as an argument.
+          </li>
+          <li>
+            <code>$ tar cf largearchive.tar WordPress/</code> this command will
+            only create the tar file.
+          </li>
+          <li>
+            <code>$ gzip largearchive.tar </code> This command will compress the
+            tar file.
+          </li>
+          <li>
+            You could also use bzip, too, in exactly the same way as gzip, but
+            the compression will use the Burrows-Wheeler transform compression
+            algorithm.
+          </li>
+          <li>
+            <code>$ bzip largearchive.tar </code> this command uses
+            Burrows-Wheeler compression algorithm.
+          </li>
+          <li>
+            <code
+              >$ wget https://downloads.wordpress.org/pluin/akismet.4.1.zip
+            </code>
+            command to download the unzip plugin using wget
+          </li>
+          <li>
+            <code>$ unzip akismet.1.1.zip </code> command to unzip the tar file.
+          </li>
+          <li>
+            <code>$ ls </code> as you can see, unzip created a new directory
+            called akismet
+          </li>
+          <li>
+            <code>$ ls akismet </code> list the files and folders in akismet, we
+            can type a and click tab which will pick akismet.
+          </li>
+          <li>
+            You can create a new zip archive using the zip command. In this
+            example, we'll archive and compress all the contents of the current
+            directory into a single file called new name dot zip.
+          </li>
+          <li>
+            <code>$ zip newname.zip * </code> this command will archive and
+            compress all the contents in the current directory.
+          </li>
+        </ol>
+        <li>Working with kernel modules</li>
+        <ol>
+          <li>
+            When troubleshooting problems with your peripherals, there are two
+            main steps. You'll frist want to confirm that the system at least
+            recognizes your device. Then, even if it's there, you need to make
+            sure there's an appropriate kernel module loaded that'll let Linux
+            talk to the device and expose it to your users.
+          </li>
+          <li>
+            So, then using the command line, just how do you figure out what
+            devices Linux sees? Well, for UBS devices, whatever is plugged into
+            a Linux computer will show up in the results of the lsubs command.
+          </li>
+          <li>
+            <code>$ lsubs </code> This command is used to list all the USB
+            devices connected to the Linux machine.
+          </li>
+          <li>
+            <code>$ lspci </code> This command is used to show you the devices
+            connected through PCI slots.
+          </li>
+          <li>
+            <code>$ lshw </code> This command will give you the whole hardware
+            range in the output. This will print a lot of hardare range might
+            span to multiple screens
+          </li>
+          <li>
+            <code>$ sudo lshw > lshw-output </code> This command will output the
+            lshw result to lshw.output file where you review at you liesure
+          </li>
+          <li>
+            The software files that make up kernel modules are usually kept in
+            the lib/modules directory. The thing is though, that the module
+            you'll want to use will depend of the Linux kernel version you're
+            running.
+          </li>
+          <li>
+            <code>$ ls /lib/modues/ </code> command to list all the installed
+            modules on this Linux machine
+          </li>
+          <li>
+            As you can see, the modules directory contains subdirectories named
+            for each kernel versions you could currently launch from the GRUB
+            boot loader at boot time. Which is the one you're running right now?
+            You can get that information by running uname -r. Now, through the
+            magic of command substitution, the dark art of inserting the results
+            of one command into the operation of another, you can easily insert
+            that value into a command using uname -r enclosed by backtick
+            characters. I'll drop down into the kernel directory and look
+            around. If it was an audio problem I was tying to solve, it would
+            make sense to take a peek into the sound directory. A module will
+            normally have a .ko extension, so that soundcore.ko file looks
+            promising.
+          </li>
+          <li>
+            <code>$ uname -r </code> give the kernel version used to boot the
+            Linux system.
+          </li>
+          <li><code>$ cd /lib/modules/`uname -r`/kernel</code></li>
+          <li><code>$ cd sound </code></li>
+          <li>
+            I will show you how you'd load that module in just a moment, but
+            first, let's use lsmod to list all the modules we've currently got
+            loaded.
+          </li>
+          <li>
+            <code>$ lsmod | grep sound</code> command to list all the loaded
+            modules currently loaded. we can use grep to filter for just modules
+            using the string sound.
+          </li>
+          <li>
+            It looks like out sound core module is in fact already loaded, but
+            if I did need to load it, we'do use the modprobe command, followed
+            by the module name.
+          </li>
+          <li>
+            <code>$ modprobe soundcore </code> this command will reload the
+            soundcore module.
+          </li>
+        </ol>
+        <li>What we learned till now</li>
+        <ol>
+          <li>pwd</li>
+          <li>mkdir scripts</li>
+          <li>touch file1</li>
+          <li>updatedb</li>
+          <li>cut -d: -f3 /etc/group | sort -rm</li>
+          <li>weget pluralsight.comm 2> errorfile.txt</li>
+          <li>tar czf newarchive.tar.gz wordpress</li>
+          <li>lsmod | grep sound</li>
+          <li>modprobe soundcore</li>
+        </ol>
+      </ol>
+      <li>Linux Networking Connectivity</li>
+      <ol>
+        <li>Netwrok Configuration</li>
+        <ol>
+          <li>
+            How routers decide on a particular addressing schema is a subject
+            that goes way beyond the scope of this course, but I will say that a
+            local router might itself use an address like 192.168.0.1, and
+            assign addresses like 192.168.0.2 and 192.168.0.3 to the client
+            devices it serves. Perhaps you don't care about the precise
+            addresses of your own computer right now, but if things ever go
+            wrong and you lose connectivity. You'll want to have a general idea
+            of how it should look.
+          </li>
+          <li>So why not not open a terminal and try it out on your own?</li>
+          <li>
+            The first step is to see if you've got access to a network router of
+            one sort or another. Run ip route show. command
+          </li>
+          <li>
+            <code>$ ip route show </code> command to show the route in my case
+            the first line tells me that my default route to the network goes
+            through the 10.0.4.0 address by way of the local netwrok device
+            known as eth0. The part of the second line that interests us right
+            now is at the very end. the IP address listed as src is actually my
+            machine's own IP address. If you have no default gateway or no
+            source address, then you know something's wrong with either your
+            connection or your network configuration. Besides actually checking
+            the cable connections between your computer and any switches or
+            routers your have, you can also run dhclient to see if there's a
+            DHPC server on the network that can give you an IP address.
+          </li>
+          <li>
+            <code>$ sudo dhclient</code> command to get the DHCP client details
+          </li>
+          <li>
+            DHCP, by the way, stands for Dynamic Host Configuration Protocol.
+            Should I already have a working connection, this won't do anythimg.
+            If you just want to see you onw IP address you can run ip addr. This
+            tells me that I have two network connections, the first is simply a
+            virtual loopback interface that allows connectivity to local
+            resources, Local interfaces will normally get a 127.0.0.1 address.
+            The second address is, as we saw erlier, using my eth0 interface and
+            has an address in the 10.0.x.x range, matching my network my router
+            is on. IP address with four octets seperated by dots are using the
+            IPv4 protocol. however we can also see my much longer IPv6 address
+            that will be useful on IPv6 networks. As the numbers of devices
+            connected directly to the internet continues to climb. IPv6-enabled
+            networking will become more and more common.
+          </li>
+          <li><code>$ ip addr </code> this command will show the IP address</li>
+          <li>
+            What's the difference between IPv4 and IPv6, I hear you asking? The
+            main difference is that IPv6 addresses are drawn from a theoretical
+            pool of numbers that's exponentially larger than IPv4.
+          </li>
+          <li>
+            The reason is simple, IPv4 addresses are made up of four 8-bit
+            numbers, which allows for a mere 4 billion combinations. That may
+            seem large, but consider that the number of devices connected to the
+            internet has already grown far beyond 4 billion, and its rate of
+            growth is ramping up fast. We bought ourselves some breathing space
+            by restricting the use of three address ranges in the 192.168.10.0
+            and 172.16 range of private networks, meaning devices behing a
+            network router could share a single IP address, but even that's not
+            going to be enough, IPv6 addresses, on the other hand, are 128-bit
+            number made up of eitht group of four hexadecimal numbers, which
+            translates to somewhere in the neighborhood of a very great number
+            of possible addresses, give or take a few trillion.
+          </li>
+          <li>256.256.256.256 = 4,294,976,296 (2^32)</li>
+          <li>
+            By the way, the Ip commands we've already seend are the current
+            state of the art in the Linux world these days, but you'll probably
+            still encounter a couple of older commands that'll do pretty much
+            the same thing.
+          </li>
+          <li>
+            <code>$ route </code> Route will display similar output as ip route
+            show, and ifcongig will give you more or less what you get from ip
+            addr.
+          </li>
+          <li>
+            Although if you ask me, i'd say that the ifconfig output is a whole
+            lot easier to read. For more detailed data on your network
+            connections and configurations, you can use the netstat program,
+            netstat -i, for instance, will display, all your network interfaces
+            along with usage statistics.
+          </li>
+          <li><code>$ ifconfig </code> commnad to get IP addresss</li>
+          <li>
+            <code>$ netstat -i </code> command to get the network interfaces and
+            usage.
+          </li>
+          <li>
+            <code>$ netstat -l </code> will display all the open and listening
+            ports. This can be an easy way to check that there aren't any
+            unnecessary and insecure entry points into your system.
+          </li>
+          <li>
+            Like netstat, the ss program can tell you all kind of good and bad
+            news about your network interfaces.
+          </li>
+          <li><code>$ ss </code> command to get all network details</li>
+        </ol>
+        <li>Domain Name System (DNS) Configuration</li>
+        <ol>
+          <li>
+            All computers are uniquely identified by IP address in a network.
+          </li>
+          <li>
+            The problem, as it usually is, is that people insits on getting
+            involved too, and people don't find it all that easy to remember
+            long IP addresses, expecially those of the IPv6 varienty.
+          </li>
+          <li>
+            So the DNS, domain name system, was created to map numaric IP
+            addresses, like 52.33.197.135, to human readable names like
+            pluralsight.com
+          </li>
+          <li>
+            For that to work, there have to be a database accessible to every
+            network that contain an up-to-date index of names.
+          </li>
+          <li>
+            The services that maintain these databases are called DNS servers.
+          </li>
+          <li>
+            You can easily tell whether your computer has access to a DNS server
+            by pointing a web browser to the DNS name of website. type any
+            domain if it is public we will get page or we will error
+          </li>
+          <li>
+            You can also reveal the status of your DNS server using the host
+            command, although its main function is translating DNS to IP and IP
+            back to DNS
+          </li>
+          <li>
+            <code>$ host pluralsight.com</code> command to the IP address of the
+            host
+          </li>
+          <li>
+            <code>$ ping 8.8.8.8 </code> this IP is one of the googles DNS
+            service
+          </li>
+          <li>
+            In some distributions you manage your DNS settings from the
+            /etc/resolve.conf file.
+          </li>
+          <li><code>$ cat /etc/resolve.conf </code></li>
+          <li>
+            <code>$ systemd -resolve --status</code> command show how the things
+            are currently configured for you.
+          </li>
+          <li>
+            The key data here is the DNS servers like, which correctly lists by
+            router's IP address as the primary source for DNS information.
+            however you can also manually create your own DNS indices, which
+            will work alongside any network DNS servers you use.
+          </li>
+          <li>Let's look at the hosts file that lives in the etc directory.</li>
+          <li><code>$ sudo nano /etc/hosts </code></li>
+          <li>
+            you can see that the 127.0.0.1 localhost is mapped to the DNS name
+            localhost
+          </li>
+        </ol>
+        <li>Remote Connections and SSH</li>
+        <ol>
+          <li>
+            The OpenSSH package, which operates using the Secure Shell protocol,
+            was designed to solve two big problems, how system adimistrator can
+            access remote and virtual servers so they can get their work doen
+            and how the data that flows back and forth across open networks as a
+            result of that access can be secured for unauthorized snooping.
+          </li>
+          <li>
+            servers tent not to have displays or even keyboard attached. They're
+            often mounted with many others on racks, and virtual machines, which
+            make up an ovrewhelming majority of running servers these days,
+            won't even have the physical ports into which a keyboard or display
+            could be attached.
+          </li>
+          <li>
+            Many servers workloads are running off site, miles or even even
+            continents away from both you and your keyboard.
+          </li>
+          <li>
+            How does SSH secures your connection through session encryption. All
+            the data packets sent between the two computers will be scrambled,
+            and for all intents and purposes, unreadable for anyone who might
+            intercept them on their journeys. Without a unique decryption key
+            the data is useless.
+          </li>
+          <li>
+            OpenSSH invisible handles the encryption/decryption process, leaving
+            you to go about your work.
+          </li>
+          <li>
+            SSH is such a popular and reliable protocol that even Microsoft has
+            made it available natively for Windows 10 and later systems.
+          </li>
+          <li>
+            Naturally, SSH has been a staple of Limux amd UNIX-Like cousin,
+            macOS, for decades.
+          </li>
+          <li>
+            Practically to get an OpenSSH connection going, you'll need software
+            installed and running on both the client and server machines.
+          </li>
+          <li>
+            The server is the machine that will host the session, the one whose
+            resources you plan to be administrating.
+          </li>
+          <li><code>$ apt install openssh-server</code></li>
+          <li><code>$ dnf install openssh-server</code></li>
+          <li>
+            The client is your machine, your laptop or workstation. The server
+            will need the openssh-server package installed while the client will
+            need openssh-client or openssh-clients, as its knows on CentOS
+          </li>
+          <li><code>$ apt install openssh-client</code></li>
+          <li><code>$ dnf install openssh-clients </code></li>
+          <li>
+            The server package will automatically cover you as a client as well,
+            but for security considerations, if you don't need to host incoming
+            SSH sessions, you shouldn't install the server software.
+          </li>
+          <li>
+            Both the server and the client interations are controlled by
+            configuration files in the etc/ssh directory.
+          </li>
+          <li>
+            Sshd_config is the one you'll exit to manage your system's host
+            behaviour, and ssh_config handles the way your system will log in as
+            a client on remote hosts. Taking a loot at the server config file by
+            default SSH sessions use port 22. Most of the time that default
+            value will work just fine, but if you want users to be able to log
+            in using their passwords, you need to make sure that password
+            authentication line has a value of yes
+          </li>
+          <li><code>$ sudo nano ssh_config </code></li>
+          <li>#PasswordAuthentication yes</li>
+          <li>
+            Secured password list sessions are possible through the ssh-keygen
+            and ssh-copy-tools. And, in fact, from a security perspective,
+            they're preferred, but that's something we'll leave for another
+            time.
+          </li>
+          <li>
+            <code>ssh ubuntu@10.0.31.131</code> enter the password you are done
+          </li>
+          <li>type exit to come out the machine</li>
+          <li>
+            some might not use standard port for ssh you might have to use -p
+            option
+          </li>
+          <li><code>$ ssh -p 2222 ubuntu@10.0.31.131 </code></li>
+          <li>
+            <code
+              >$ ssh -i /home/myusername/mykeyfile.pem ubuntu@10.0.31.131
+            </code>
+          </li>
+          <li>
+            SCP stands for secure copy, and it rides on top of existing SSH
+            Infrastructure to securly copy files between machines.
+          </li>
+          <li>
+            <code>$ scp update-local.sh ubuntu@10.0.31.131:/host/ubuntu </code>
+            we should have sufficient permission where we waht to save on the
+            remote server.
+          </li>
+          <li>Summary</li>
+          <ol>
+            <li>ip route show</li>
+            <li>ip addr</li>
+            <li>netstat -i</li>
+            <li>systemd-resolve --status</li>
+            <li>ssh -f mykeyfile.pem ubuntu@10.0.31.131</li>
+            <li>scp script.sh ubuntu@10.0.31.131:/home/ubuntu</li>
+          </ol>
+        </ol>
+      </ol>
+      <li>Linux Scripting</li>
+      <ol>
+        <li>Scripting Basics</li>
+        <ol>
+          <li>
+            Brand new file with extension .sh extension to identify it as a
+            script. This is a useful convention for helping you keep track of
+            your scipt file. .sh extension is optinal
+          </li>
+          <li><code>$nano myscript.sh </code></li>
+          <li>
+            The first line of every script has to tell Linux it's an executable
+            script and which shell interpreter we're going to use. I do by
+            typing what's called the shebang line, which consists of a hash
+            symbol, and exclamation mark, and the absolute location of the shell
+            interpreter's binary file, in our case that will be Bash
+          </li>
+          <li>
+            After doing that, there's a world of chocies available to you.
+            There's really no limit to what you can make a Linux script do.
+          </li>
+          <li>
+            We'll create a very simple calculator that will ask the user to
+            input two numbers and then output their product.
+          </li>
+          <li>
+            <code>
+              #!/bin/bash declare -i number1 declare -i number2 declare -i total
+              echo what's your favorite number? " read number1 echo "What number
+              do you really hate? " read number2 total = $number1 * $number2
+              echo "Aha! they equal " $total exit 0
+            </code>
+          </li>
+          <li>-i is used to except number</li>
+          <li>
+            the read line whatever the user entered and assign to the Variable
+            number1
+          </li>
+          <li>
+            $ sign is used to refer to pre-existing variables the doller sign
+          </li>
+          <li>total is assigned with $number1 * $number2 value</li>
+          <li>next we are echoing total value using $total</li>
+          <li>
+            finally we will formally exit the script, a step that isn't always
+            necessary, and tell the script to issue the exit code 0, indicating
+            success
+          </li>
+          <li>exit nano by saving and list the contents</li>
+          <li><code>ls </code> we should able to see new file myscript.sh</li>
+          <li>
+            We'll first have to use the chmod command to make the file
+            executable by adding the value x.
+          </li>
+          <li>
+            <code>$ chmod +x myscript.sh </code> command to add executable
+            permissions to myscript.sh
+          </li>
+          <li>now we can execute the script</li>
+          <li><code># ./myscript.sh </code></li>
+        </ol>
+        <li>user inputs</li>
+        <li>Variables</li>
+        <li>Flow control</li>
+        <ol>
+          <li>for</li>
+          <ol>
+            <li>
+              Now its loop time, A loop will apply one or more operations to
+              each one of values, one after the other, in sequence.
+            </li>
+            <li>nano theloop.sh</li>
+            <li>
+              <code>
+                #!/bin/bash for i in {0..10..2} do echo "we've been through this
+                $i times already!" done
+              </code>
+            </li>
+            <li>we are going through a loop from 0 to 10 incremeting at 2</li>
+            <li><code>$ touch file1 file2 file3</code></li>
+            <li><code>nano newloop.sh</code></li>
+            <li>
+              <code
+                >#!/bin/bash for filename in file1 file2 file3 do echo
+                "Important stuff" >> $filename done
+              </code>
+            </li>
+            <li><code>cat file1 </code></li>
+          </ol>
+          <li>if</li>
+          <ol>
+            <li>you can controll a script process using if, this script will ask for two user inputs </li>
+            <li><code>#!/bin/bash 
+                echo "What's your favorite color?  "
+                read text1 
+                echo "What's your best frind's favorite color?  "
+                read text2
+                if [ $text1 != $text2 ] then
+                  echo "I guess opposites attract"
+                else
+                  echo "You two do think alike"
+                fi
+                exit 0
+            </code></li>
+            <li>you close the if with backward fi </li>
+          </ol>
+          <li>while</li>
+          <ol>
+            <li>While will continue executing a command for as long specified statement is ture. In this case we create a variable called counter and assign it the value of 10</li>
+            <li><code>
+                #!/bash/bin
+                declare -i counter
+                counter=10
+                while [ $counter -gt 2 ]: do 
+                    echo The counter is $counter
+                    counter=counter-1
+                done
+                exit 0 
+            </code></li>
+          </ol>
+          <li>case</li>
+          <ol>
+            <li><code>#!/bin/bash
+                echo "What's tommorow's weather going to be like? "
+                read whether
+                    cases $whether in
+                        sunny) echo "Don't forget your sunglasses" ;;
+                        rainy) echo "Don't forget your umbrella" ;;
+                        cloudy) echo "Don't forget your jacket" ;;
+                        *) echo "Sorry, I'm not familiar with that weather system." ;;
+                    esac
+            </code></li>
+            <li>man Builtins</li>
+          </ol>
+        </ol>
+        <li>Builtins vs external programs</li>
+      </ol>
+    </ol>
+  </body>
+</html>
