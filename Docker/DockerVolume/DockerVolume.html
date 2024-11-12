@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker Volume</title>
+  </head>
+  <body>
+    <ol>
+      <h3>Volume lab</h3>
+      <li>docker build -t filegen .</li>
+      <li>docker run -d --name myfileapp filegen</li>
+      <li>docker volume create myfiles</li>
+      <li>docker volume ls</li>
+      <li>docker volume inspect myfiles</li>
+      <li>docker run -d --name myfileapp -v myfiles:/output filegen</li>
+      <li>docker exec -it myfileapp bash</li>
+      <li>ls -l</li>
+      <li>exit</li>
+      <li>docker volume inspect myfiles</li>
+      <li>docker run -d --name myfileapp1 -v myfiles:/output filegen</li>
+      <li>docker volume inspect myfiles</li>
+      <li>
+        docker run -d --name myfileapp --mount
+        type=volume,source=myfiles,target=/output filegen
+      </li>
+      <li>docker inspect myfileapp </li>
+
+      <h3>Bind mount lab -- host</h3>
+      <li>
+        docker run -d --name myfileapp -v
+        /Users/mreddy/Developer/Mallikarjun/GitRepository/DevopsZeroToHero/Docker/DockerVolume:/output
+        filegen
+      </li>
+      <li>docker inspect myfileapp </li>
+
+      <li>
+        docker run -d --name myfileapp1 -v
+        /Users/mreddy/Developer/Mallikarjun/GitRepository/DevopsZeroToHero/Docker/DockerVolume:/output
+        filegen
+      </li>
+      <li>docker inspect myfileapp </li>
+
+      <h3>tmpfs mount</h3>
+      <li>docker run -d --name myfileapp --mount type=tmpfs,target=/output filegen</li>
+      <li>docker inspect myfileapp </li>
+    </ol>
+  </body>
+</html>

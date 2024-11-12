@@ -1,0 +1,1934 @@
+    1  ansible-config init --disable
+    2  vi ansible.cfg
+    3  ls
+    4  ls -a
+    5  cd ..
+    6  cd .
+    7  cd ..
+    8  ls
+    9  cd etc
+   10  ls
+   11  mkdir ansible
+   12  sudo mkdir ansible
+   13  ls
+   14  cd ansible
+   15  touch hosts.ini
+   16  sudo touch hosts
+   17  cd ..
+   18  cd Users/mreddy
+   19  ansible --version
+   20  ls
+   21  vi ansible.cfg
+   22  ansible --version
+   23  ansible all -m ping
+   24  ls
+   25  ls .
+   26  cd ..
+   27  ls
+   28  ls .
+   29  cd ../..
+   30  pwd
+   31  cd Users/mreddy
+   32  ls
+   33  ls -a
+   34  cd .ssj
+   35  cd ..
+   36  cd mreddy
+   37  cd .ssh
+   38  ls
+   39  ls -a
+   40  cd ..
+   41  ssh-keygen -t rsa
+   42  ls
+   43  ssh-copy-id -i ./ansible.pub ubuntu@3.109.216.41
+   44  ssh-copy-id -f "-o IdentityFile ~/Developer/Mallikarjun/ec2.pem" ubuntu@65.2.70.183
+   45  ssh-copy-id -f "-o IdentityFile ~/Developer/Mallikarjun/ec2.pem" ubuntu@3.109.216.41
+   46  ssh ubuntu@3.109.216.41
+   47  ssh-copy-id -f "-o IdentityFile ~/Developer/Mallikarjun/ec2.pem" ubuntu@52.66.180.99
+   48  ssh ubuntu@52.66.180.99
+   49  cd Developer/Mallikarjun
+   50  ls
+   51  cd Ansible
+   52  ls
+   53  cd ..
+   54  mkdir ansible-demo
+   55  cd ansible
+   56  cd ..
+   57  cd ansible-demo
+   58  ls
+   59  vi host.ini
+   60  cat host.ini
+   61  ansible all -m ping
+   62  ansible -i host.ini all -m ping
+   63  ssh ubuntu@52.66.180.99
+   64  ssh ubuntu@3.109.216.41
+   65  pws
+   66  pwd
+   67  cd Developer/Mallikarjun/ansible-demo
+   68  ls
+   69  ansible --version
+   70  ansible all -i host.ini -m ping
+   71  ansible-config init --defaults
+   72  ansible-config init --default
+   73  ansible-config init --disabled
+   74  ls
+   75  ls -a
+   76  ansible-config init --disabled > ansible.cfg
+   77  ls
+   78  vi ansible.cfg
+   79  cat ansible.cfg
+   80  cat ../../../../../etc/ansible/hosts
+   81  touch ../../../../../etc/ansible/hosts
+   82  sudo touch ../../../../../etc/ansible/hosts
+   83  cat ../../../../../etc/ansible/hosts
+   84  touch powershell.yml
+   85  code .'
+   86  code .
+   87  ansible=playbook --help
+   88  ansible-playbook --help
+   89  ls
+   90  ansible-playbook powershell.yml -v
+   91  ansible-playbook -i host.ini powershell.yml -v
+   92  ansible-playbook -i host.ini powershell.yml 
+   93  s
+   94  ls
+   95  ls .
+   96  ssh ubuntu@52.66.180.99
+   97  ssh ubuntu@3.109.216.41
+   98  ansible-playbook -i host.ini powershell.yml 
+   99  ansible-playbook -i host.ini powershell.yml -vvv
+  100  ansible-doc user
+  101  cd VariableExample
+  102  ansible-playbook -i hosts.ini milo.yml
+  103  ansible-playbook -i hosts.ini milo.yml -v
+  104  ansible-playbook -i host.ini milo.yml -v
+  105  s
+  106  ssh ubuntu@52.66.180.99
+  107  ssh milo@52.66.180.99
+  108  ssh ubuntu@52.66.180.99
+  109  ansible-playbook -i host.ini kayal.yml
+  110  cd ..
+  111  cd..
+  112  cd ..
+  113  pwd
+  114  ssh-copy-id -f "-o IdentityFile ~/Developer/Mallikarjun/ec2.pem" ubuntu@15.207.107.71
+  115  ssh-copy-id -f "-o IdentityFile ~/Developer/Mallikarjun/ec2.pem" ubuntu@3.108.228.156
+  116  ssh ubuntu@3.108.228.156
+  117  ssh ubuntu@15.207.107.71
+  118  cd Developer/Mallikarjun/ansible-demo
+  119  cd VariableExample
+  120  ls
+  121  ansible-galaxy init webserver
+  122  ansible-galaxy init apache
+  123  yarn start
+  124  ls
+  125  ansible-playbook -i host.ini apache-install.yml
+  126  ls
+  127  ansible-playbook -i host.ini apache-install.yml
+  128  cd ..
+  129  ls
+  130  cd VariableExample
+  131  ls
+  132  ansible-playbook -i host.ini apache-install.yml
+  133  yarn start
+  134  cd ..
+  135  cd GitRepository
+  136  ls 
+  137  git clone git@github.com:tmreddy/DevopsZeroToHero.git
+  138  ls
+  139  cd DevopsZeroToHero
+  140  code .
+  141  aws configure --list
+  142  aws configure -list
+  143  aws configure --help
+  144  aws configure -help
+  145  aws configure list
+  146  ssh -i ./Developer/Mallikarjun/ec2.pem ubuntu@43.205.116.28
+  147  cdc..
+  148  cd ..
+  149  ls
+  150  cat ec2.pem
+  151  ssh -i ./Developer/Mallikarjun/ec2.pem ubuntu@43.205.116.28
+  152  traceroute google.com
+  153  s
+  154  ps
+  155  ssh -i ./Developer/Mallikarjun/ec2.pem ubuntu@43.205.116.28
+  156  ps
+  157  ssh -i ./Developer/Mallikarjun/ec2.pem ubuntu@43.205.116.28
+  158  cd ..
+  159  ls
+  160  ls -a
+  161  ps
+  162  which zsh
+  163  which 
+  164  which bash
+  165  date
+  166  echo "Today date is" date
+  167  echo "Today date is" `date`
+  168  echo "Today date is" date
+  169  echo "Today date is" `date`
+  170  cd Developer/Mallikarjun
+  171  ls
+  172  cd DevopsZeroToHero
+  173  ls
+  174  mkdir ShellScripts
+  175  cd ShellScripts
+  176  ls
+  177  tocuh zhs.sh
+  178  ls
+  179  touch zhs.sh
+  180  touch bash.sh
+  181  vi zhs.sh
+  182  cat zhs.sh
+  183  sh zsh.sh
+  184  ls
+  185  rename zhs.sh zsh.sh
+  186  mv zhs.sh zsh.sh
+  187  ls
+  188  sh zsh.sh
+  189  vi zsh.sh
+  190  sh zsh.sh
+  191  ls
+  192  cp zsh.sh bash.sh
+  193  ls
+  194  cat bash.sh
+  195  cat zsh.sh
+  196  vi zsh.sh
+  197  ssh -i ./Developer/Mallikarjun/ec2.pem ubuntu@43.205.116.28
+  198  cd ..
+  199  ls
+  200  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScript  ubuntu@43.205.116.28~/.\n
+  201  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28~/.\n
+  202  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28\n
+  203  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 .\n
+  204  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ./files\n
+  205  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 .files\n
+  206  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 files\n
+  207  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~files\n
+  208  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~/files\n
+  209  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~./files\n
+  210  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 /files\n
+  211  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ./files\n
+  212  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 root\n
+  213  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 .\n
+  214  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~./\n
+  215  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~/.\n
+  216  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~/.files\n
+  217  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~\n
+  218  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~files\n
+  219  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28 ~/files\n
+  220  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28~/files\n
+  221  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28~/.files\n
+  222  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28~/.\n
+  223  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28.\n
+  224  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28\n
+  225  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/bash.sh  ubuntu@43.205.116.28:~/files\n
+  226  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts  ubuntu@43.205.116.28:~/files\n
+  227  scp -i ./Developer/Mallikarjun/ec2.pem  ./Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/zsh.sh  ubuntu@43.205.116.28:~/files\n
+  228  ssh -i ./Developer/Mallikarjun/ec2.pem ubuntu@43.205.116.28
+  229  ipconfig getifaddr en0
+  230  ls
+  231  vi bash.sh
+  232  sh bash.sh
+  233  man echo
+  234  ssh -i ./Developer/Mallikarjun/ec2.pem ubuntu@43.205.116.28
+  235  vi bash.sh
+  236  sh bash.sh
+  237  sh zsh.sh
+  238  sh bash.sh
+  239  bash bash.sh
+  240  ./bash.sh
+  241  .bash.sh
+  242  ./bash.sh
+  243  zsh bash.sh
+  244  touch greetings.sh
+  245  vi greetings.sh
+  246  cat greetings.sh
+  247  ls
+  248  greetings.sh "Mallikarjun"
+  249  ls
+  250  sh greetings.sh "Mallikarjun"
+  251  vi greetings.sh
+  252  sh greetings.sh "Mallikarjun"
+  253  sh greetings.sh "Mallikarjun" "Reddy"
+  254  name = "mreddy"
+  255  echo name = "mreddy"
+  256  $name
+  257  vi greetings.sh
+  258  sh greetings.sh "Mallikarjun" "Reddy"
+  259  vi greetings.sh
+  260  sh greetings.sh "Mallikarjun" "Reddy"
+  261  env
+  262  ssh -i ./Developer/Mallikarjun/ec2.pem ubuntu@43.205.116.28
+  263  touch ifeliffi.sh
+  264  vi ifeliffi.sh
+  265  sh ifeliffi.sh
+  266  cat ifeliffi.sh
+  267  sh ifeliffi.sh
+  268  vi ifeliffi.sh
+  269  sh ifeliffi.sh
+  270  vi ifeliffi.sh
+  271  sh ifeliffi.sh
+  272  vi ifeliffi.sh
+  273  sh ifeliffi.sh
+  274  vi ifeliffi.sh
+  275  sh ifeliffi.sh
+  276  vi ifeliffi.sh
+  277  sh ifeliffi.sh
+  278  vi ifeliffi.sh
+  279  sh ifeliffi.sh
+  280  vi ifeliffi.sh
+  281  sh ifeliffi.sh
+  282  vi ifeliffi.sh
+  283  sh ifeliffi.sh
+  284  git pull
+  285  nvm use 18
+  286  npm install
+  287  yarn start
+  288  npm install
+  289  nvm use 18
+  290  npm install
+  291  yarn start
+  292  nvm use 18
+  293  npm intall
+  294  npm install
+  295  yarn dev
+  296  npm dev
+  297  npm run dev
+  298  yarn start
+  299  npm run dev
+  300  yarn start
+  301  yarn dev
+  302  nvm use 18
+  303  yarn dev
+  304  yarn build
+  305  yarn dev
+  306  git pull
+  307  nvm use 18
+  308  yarn dev
+  309  yarn build
+  310  yarn dev
+  311  nvm use 18
+  312  yarn dev
+  313  yarn build
+  314  yarn start
+  315  nvm use 18
+  316  yarn dev
+  317  use nvm 18
+  318  nvm use 18
+  319  yarn build
+  320  yarn start
+  321  yarm start
+  322  node start
+  323  yarn build
+  324  yarn start
+  325  git pull
+  326  yarn build
+  327  yarn start
+  328  git pull
+  329  yarn build
+  330  yarn start
+  331  git pull
+  332  yarn build
+  333  npm install
+  334  nvm use 18
+  335  npm install
+  336  git pull
+  337  nvm use 18
+  338  nvm use 14
+  339  nvm install 14
+  340  nvm use 14
+  341  npm install
+  342  set NODE_TLS_REJECT_UNAUTHORIZED = "0";
+  343  npm install
+  344  docker build -t myacc-ui .
+  345  set ENV = qa
+  346  docker build -t myacc-ui .
+  347  npm install
+  348  nvm use 14
+  349  npm install
+  350  nvm use 18
+  351  npm install
+  352  docker build -t myacct-api .
+  353  docker pull node 14
+  354  docker pull node
+  355  docker run -it node
+  356  yarn start
+  357  yarn dev
+  358  ls
+  359  chmod 777 node_modules
+  360  yarn dev
+  361  yarn start
+  362  chmod 777 -r node_modules
+  363  chmod 777 -R node_modules
+  364  chmod 777 node_modules
+  365  chmod -R 777 node_modules
+  366  yarn start
+  367  git pull
+  368  npm install
+  369  yarn start
+  370  yarn dev
+  371  yarn build
+  372  yarn start
+  373  nvm use 18
+  374  mpm install
+  375  npm install
+  376  yarn build
+  377  yarn start
+  378  yarn dev
+  379  npm install --force
+  380  cd GitRepository
+  381  git clone -b feature/PLAT-2667/AR-Optout git@github.com:mcafee-eng/ecom-myaccount-ui.git
+  382  nvm use 18
+  383  npm install
+  384  nvm use 14
+  385  npm install
+  386  yarn build
+  387  yarn start
+  388  yarn dev
+  389  cd shelkl
+  390  cd shell
+  391  ls
+  392  cd ShellScripts
+  393  ls
+  394  sh whileeg.sh
+  395  sh for.sh
+  396  sh case.sh
+  397  cd ..
+  398  ls Developer/Mallikarjun
+  399  ssh -i Developer/Mallikarjun/ec2.pem ubuntu@13.233.117.139
+  400  ls
+  401  cp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139:~/files
+  402  cp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139:~/.
+  403  cp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139: ~
+  404  cp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139: ~.
+  405  cp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139:~/files
+  406  cp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139: /home/ubuntu
+  407  cp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139: /home/ubuntu/
+  408  cp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139:/home/ubuntu/
+  409  scp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139:~/files
+  410  crontab -e
+  411  sudo cat cron.allow ubuntu
+  412  cat cron.allow ubuntu
+  413  sudo apt install crontab
+  414  systemctl status cron.service
+  415  sudo systemctl status cron.service
+  416  scp -i ~/Developer/Mallikarjun/ec2.pem  ~/Developer/Mallikarjun/DevopsZeroToHero/ShellScripts/for.sh ubuntu@13.233.117.139:~/files
+  417  ssh -i Developer/Mallikarjun/ec2.pem ubuntu@13.233.117.139
+  418  yarn start
+  419  start dev
+  420  yarn dev
+  421  git diff
+  422  yarn dev
+  423  npm install
+  424  nvm use 18
+  425  npm install
+  426  git pull
+  427  npm install
+  428  nvm use 14
+  429  npm install
+  430  yarn dev
+  431  nvm use 16
+  432  npm install
+  433  yarn dev
+  434  yarn build
+  435  yarn dev
+  436  yarn start
+  437  yarn build
+  438  yarn start
+  439  yarn build
+  440  yarn start
+  441  git pull
+  442  clear
+  443  docker build -t myaccui .
+  444  RUN npm set strict-ssl false
+  445  RUN export NODE_TLS_REJECT_UNAUTHORIZED=0
+  446  nvm use 14
+  447  npm install
+  448  yarn build
+  449  yarn start
+  450  yarn dev
+  451  yarn start
+  452  yarn dev
+  453  ipconfig getifaddr en0
+  454  ping 128.0.6613.114
+  455  yarn dev
+  456  yarn isntall os
+  457  yarn install os
+  458  npm install os
+  459  yarn add os
+  460  RUN npm set strict-ssl false\nRUN export NODE_TLS_REJECT_UNAUTHORIZED=0\n 
+  461  RUN npm set strict-ssl false
+  462  RUN export NODE_TLS_REJECT_UNAUTHORIZED=0
+  463  yarn add os
+  464  yarn dev
+  465  ping 10.17.151.42
+  466  yarn dev
+  467  ping 100.64.0.1\n
+  468  ipconfig getifaddr en0
+  469  ipconfig getifaddr 
+  470  ipconfig 
+  471  ipconfig getifaddr en0
+  472  yarn dev
+  473  git status
+  474  git push
+  475  git status
+  476  git push
+  477  yarn start
+  478  yarn dev
+  479  yarn start
+  480  git pull
+  481  git status
+  482  git add src/core/use-cases/ManageSubscriptionsUseCase.ts
+  483  git status
+  484  nvm use 14
+  485  yarn start
+  486  git status
+  487  yarn dev
+  488  git build
+  489  yarn build
+  490  yarn start
+  491  npm install
+  492  nvm use 18
+  493  npm install
+  494  git pull
+  495  yarn dev
+  496  git push
+  497  git pull
+  498  yarn start
+  499  git pull
+  500  yarn start
+  501  yarn dev
+  502  yarn start
+  503  git status
+  504  yarn dev
+  505  ls
+  506  COPY --from=build /app/static ./dist/static
+  507  cp --from=build /app/static ./dist/static
+  508  cp /app/static ./dist/static
+  509  cp static ./dist/static
+  510  ls
+  511  cp static/Plans.json ./dist/static/Plan.json
+  512  docker build -t apigateway .
+  513  docker image ls 
+  514  docker run exec -it apigateway
+  515  docker exec -it apigateway
+  516  docker exec -it apigateway bash
+  517  docker exec -id apigateway /bin/bash
+  518  docker run -it rm apigateway /bin/bash
+  519  docker run -t -t apigateway /bin/bash
+  520  docker run -i -t apigateway /bin/bash
+  521  docker run -i -t apigateway 
+  522  docker build -t apigateway .
+  523  docker run -i -t apigateway /bin/basg
+  524  docker run -i -t apigateway /bin/bash
+  525  docker run -i -t apigateway 
+  526  docker build -t apigateway .
+  527  clear
+  528  ls
+  529  docker build -t apigateway .
+  530  docker run -i -t apigateway 
+  531  clear
+  532  docker run -i -t apigateway /bin/bash
+  533  docker build apis .
+  534  docker build -t apis .
+  535  RUN npm set strict-ssl false
+  536  npm set strict-ssl false
+  537  export NODE_TLS_REJECT_UNAUTHORIZED=0 
+  538  docker build -t apis .
+  539  yarn config set "strict-ssl" false -g
+  540  docker build -t apis .
+  541  yarn config set enableStrictSsl false -
+  542  docker build -t apis .
+  543  ipconfig getifaddr en0
+  544  git pull
+  545  docker build -t myacctapi .
+  546  yarn config set enableStrictSsl false\n 
+  547  docker build -t myacctapi1 .
+  548  cd GitRepository
+  549  git clone git@github.com:mcafee-eng/pse-acl.git
+  550  cd apps
+  551  ls
+  552  cd order
+  553  ls
+  554  cd ..
+  555  nvm use 18
+  556  yarn nx build order 
+  557  nvm use 18
+  558  npm install
+  559  yarn dev
+  560  yarn install
+  561  yarn dev
+  562  npm install
+  563  git pull
+  564  nvm install
+  565  nvm use 18
+  566  mpm install
+  567  npm install -f
+  568  yarn build
+  569  ls
+  570  ./static/*.json
+  571  ls
+  572  ./static/*.json
+  573  sudo ./static/*.json
+  574  cat ./static/*.json
+  575  yarn build
+  576  yarn start
+  577  yarn build
+  578  yarn build 
+  579  yarn build
+  580  yarn start
+  581  yarn build
+  582  cd ...
+  583  cd GitRepository/ecom-myaccount-apigateway
+  584  .
+  585  ls .
+  586  yarn build
+  587  yarn start
+  588  yarn build
+  589  yarn start
+  590  yarn build
+  591  yarn start
+  592  yarn build
+  593  yarn start
+  594  yarn dev
+  595  yarn build
+  596  yarn start
+  597  yarn dev
+  598  cs ..
+  599  cd ..
+  600  \\amznfsxihsozb8c.mcafee.int\share\MyAccount\TN AR Opt out
+  601  amznfsxihsozb8c.mcafee.int\share\MyAccount\TN AR Opt out
+  602  \\amznfsxihsozb8c.mcafee.int\share\MyAccount
+  603  cd Office/2024/
+  604  ls
+  605  docker load < ecom-myaccount.tar
+  606  docker run -i -t -n my 074e3ec61ec2f8cee314a2aedfb36a2a3ee6aa808b44dafafcb872b1a4b94144 
+  607  docker run -i -t 074e3ec61ec2f8cee314a2aedfb36a2a3ee6aa808b44dafafcb872b1a4b94144 
+  608  ping localhost:8000
+  609  docker run -i -t -p 8000 8000 074e3ec61ec2f8cee314a2aedfb36a2a3ee6aa808b44dafafcb872b1a4b94144 
+  610  docker run -i -t -p 8000:8000 074e3ec61ec2f8cee314a2aedfb36a2a3ee6aa808b44dafafcb872b1a4b94144 
+  611  ping localhost:8000
+  612  ping http://localhost:8000
+  613  docker run -i -t -p 8000:8000 074e3ec61ec2f8cee314a2aedfb36a2a3ee6aa808b44dafafcb872b1a4b94144 
+  614  ping 209.142.68.29
+  615  yarn start
+  616  yarn build
+  617  yarn start
+  618  yarn dev
+  619  yarn start
+  620  yarn build
+  621  yarn start
+  622  yarn build
+  623  yarn dev
+  624  yarn start
+  625  yarn dev
+  626  yarn build
+  627  yarn install
+  628  yarn build
+  629  npm install
+  630  yarn dev
+  631  yarn start
+  632  yarn build
+  633  yarn start
+  634  yarn build
+  635  yarn start
+  636  yarn dev
+  637  cls
+  638  clear
+  639  cd ..
+  640  ping https://us-west-2.console.aws.amazon.com/acm/home\?region\=us-west-2\#/certificates/df45a965-6745-4784-b69b-9f172d2afbef
+  641  ping api-gateway-qa-1-29-1636232224.us-west-2.elb.amazonaws.com
+  642  curl http://api-gateway-qa-1-29-1636232224.us-west-2.elb.amazonaws.com
+  643  curl -X GET http://api-gateway-qa-1-29-1636232224.us-west-2.elb.amazonaws.com
+  644  curl -X GET https://einstein-qa-1-29-467036457.us-west-2.elb.amazonaws.com
+  645  curl -X GET http://einstein-qa-1-29-467036457.us-west-2.elb.amazonaws.com
+  646  yarn build
+  647  yarn start
+  648  yarn build
+  649  yarn start
+  650  yarn build
+  651  yarn start
+  652  cd Developer
+  653  cd Mallikarjun
+  654  cd GitRepository
+  655  cd ShellScripting
+  656  ls
+  657  ls shell-scripting-bash-zshell-getting-started
+  658  cd shell-scripting-bash-zshell-getting-started
+  659  cd 02
+  660  ls
+  661  cd demos
+  662  ls
+  663  cd after_m2
+  664  ls 
+  665  head shipments.csv
+  666  cat shipments.csv
+  667  head shipments.csv
+  668  cat create_container_report.sh
+  669  ls
+  670  cp shipments.csv ./
+  671  cp shipments.csv ./../
+  672  cd ..
+  673  ls
+  674  cd ..
+  675  ls
+  676  cd ..
+  677  ls
+  678  Create_report.sh
+  679  ./Create_report.sh
+  680  ls
+  681  ls -l Create_report.sh
+  682  chmod u+x Create_report.sh
+  683  ls -l Create_report.sh
+  684  ./Create_report.sh
+  685  ls
+  686  ls reports
+  687  cat reports/H6.csv
+  688  ./Create_report.sh
+  689  greetings = "Hello"
+  690  $ $greetings
+  691  docker exec -it -t linux ffb64c9b7e8b9f1891f7a72609d4e691c4671dc4aa83084fc7b5774958d827de /bin/bash
+  692  docker run -it -t linux ffb64c9b7e8b9f1891f7a72609d4e691c4671dc4aa83084fc7b5774958d827de /bin/bash
+  693  docker run -it -n linux ffb64c9b7e8b9f1891f7a72609d4e691c4671dc4aa83084fc7b5774958d827de /bin/bash
+  694  docker run -it ffb64c9b7e8b9f1891f7a72609d4e691c4671dc4aa83084fc7b5774958d827de /bin/bash
+  695  ls
+  696  ./Create_report.sh
+  697  ./Create_report.sh B5
+  698  ls
+  699  ls reports
+  700  cat reports/B5.csv
+  701  docker run -it ffb64c9b7e8b9f1891f7a72609d4e691c4671dc4aa83084fc7b5774958d827de /bin/bash
+  702  greetings="Hello"
+  703  $greetings
+  704  echo $greetings
+  705  ls
+  706  head shipments.csv
+  707  cat shipments.csv
+  708  head ShellScripting.html
+  709  ls
+  710  Create_report.sh
+  711  history
+  712  export NODE_TLS_REJECT_UNAUTHORIZED=0 
+  713  yarn start
+  714  ls
+  715  cd Developer/Mallikarjun/GitRepository/ShellScripting
+  716  ls
+  717  ./Create_report.sh
+  718  yarn dev
+  719  yarn build
+  720  yarn start
+  721  npm install -f
+  722  yarn start
+  723  npm start
+  724  yarn start
+  725  yarn build
+  726  npm start
+  727  npm install 
+  728  yarn start
+  729  npm install -g
+  730  npm install -f
+  731  yarn start
+  732  npm start
+  733  yarn dev
+  734  npm dev
+  735  ls
+  736  ./Create_report.sh
+  737  yarn dev
+  738  yarn start
+  739  yarn insta
+  740  yarn install
+  741  yarn install -f
+  742  npm install -f
+  743  yarn dev
+  744  git pull
+  745  npm install -f
+  746  yarn dev
+  747  $PATH
+  748  files="1 2"
+  749  files
+  750  $files
+  751  echo files
+  752  echo $files
+  753  touch $files
+  754  ls
+  755  ls -a
+  756  history
+  757  yarn build
+  758  ./Create_report.sh X1 work
+  759  ./Create_report.sh X1 "My Directory"
+  760  ./Create_report.sh "*" reports
+  761  printf "I am %s and my shell is %s\n" $USER $SHELL
+  762  yarn dev
+  763  yarn install
+  764  yarn install -f
+  765  yarn dev
+  766  npm install
+  767  npm run dev
+  768  history
+  769  npm run dev
+  770  nvm use 16
+  771  npm run dev
+  772  npm install
+  773  npm run dev
+  774  npm install
+  775  npm run dev
+  776  yarn start
+  777  man test
+  778  cd ..
+  779  ls
+  780  cd DevopsZeroToHero
+  781  git diff
+  782  git status
+  783  cd ..
+  784  ls
+  785  cd DevopsZeroToHero
+  786  ls
+  787  git status
+  788  git add ShellScripts/
+  789  git status
+  790  git commit -m "shellscripts"
+  791  git push
+  792  git config
+  793  git config --list
+  794  cat ~./ssh
+  795  ls ~./ssh
+  796  cd ..
+  797  ls
+  798  ls ./ssh
+  799  ls ~./ssh
+  800  ls -a
+  801  ls .ssh
+  802  cat .ssh/id_ed25519.pub
+  803  cat .ssh/tmreddy.pub
+  804  cd De
+  805  cd Developer/Mallikarjun
+  806  ls
+  807  cd DevopsZeroToHero
+  808  ls
+  809  git status
+  810  git push
+  811  pbcopy < ~/.ssh/id_rsa.pub
+  812  cd ..
+  813  pbcopy < ~/.ssh/id_rsa.pub
+  814  pbcopy < .ssh/id_rsa.pub
+  815  pbcopy < .ssh/tmreddy.pub
+  816  ssh -T git@github.com
+  817  cd Developer/Mallikarjun/DevopsZeroToHero
+  818  git remote set-url origin git@github.com:tmreddy/DevopsZeroToHero.git
+  819  git push
+  820  cd ..
+  821  cd .ssh
+  822  ls
+  823  vi config
+  824  git config --list
+  825  cd ..
+  826  cd Developer/Mallikarjun/DevopsZeroToHero
+  827  git remote set-url origin git@github.com-tmreddy:tmreddy/DevopsZeroToHero.git
+  828  git push
+  829  cd ..
+  830  ls
+  831  cd .ssh
+  832  ls
+  833  rm tmreddy.pub
+  834  ls
+  835  rm tmreddy
+  836  ls
+  837  ssh-keygen -t rsa -C "t.mallikarjunreddy@gmail.com"\n
+  838  pbcopy < tmreddy.pub\n
+  839  ls
+  840  cd ..
+  841  cd Developer
+  842  cd Mallikarjun/DevopsZeroToHero
+  843  git remote set-url origin git@github.com-tmreddy:tmreddy/DevopsZeroToHero.git
+  844  git push
+  845  cd ..
+  846  ls
+  847  cd GitRepository
+  848  ls 
+  849  cd DevopsZeroToHero
+  850  git status
+  851  git add .
+  852  git status
+  853  git remote set-url origin git@github.com-tmreddy:tmreddy/DevopsZeroToHero.git
+  854  git commit -m "shell"
+  855  git push
+  856  git pull
+  857  git diff
+  858  git merge
+  859  git pull
+  860  git push
+  861  ls
+  862  cd Ansible
+  863  code .
+  864  ls
+  865  git init
+  866  git add .
+  867  git commit "ansible pluralsight course"
+  868  git commit -m "ansible pluralsight course"
+  869  git status
+  870  git branch
+  871  git branch -M main
+  872  git remote add origin git@github.com-tmreddy:tmreddy/Ansible.git
+  873  git push -u origin main
+  874  cd ..
+  875  ls
+  876  cd DevopsZeroToHero
+  877  cd ..
+  878  cd ShellScripting
+  879  ls
+  880  cd ..
+  881  cd DevopsZeroToHero
+  882  code
+  883  code .
+  884  man wget
+  885  cd
+  886  ls "this is my first story"
+  887  ;ls
+  888  touch "this is my first sotry"
+  889  ls
+  890  touch this is my first story
+  891  ls
+  892  tocuh another\ four\ stories
+  893  ls
+  894  yarn dev
+  895  git pull
+  896  nvm use 18
+  897  npm install
+  898  yarn dev
+  899  git pull
+  900  nvm use 18
+  901  npm install 
+  902  yarn dev
+  903  nvm use 18
+  904  npm install
+  905  yarn dev
+  906  yarn start
+  907  yarn build
+  908  yarn start
+  909  yarn dev
+  910  host google.com
+  911  ping 8.8.8.8.
+  912  ping 8.8.8.8
+  913  git status
+  914  git add LinuxFundamentals.html
+  915  git commit -m "linux funda"
+  916  git push
+  917  git status
+  918  yarn build
+  919  yarn dev
+  920  git status
+  921  git push
+  922  git pull
+  923  yarn build
+  924  git pull
+  925  yarn build 
+  926  yarn start
+  927  yarn dev
+  928  yarn build
+  929  yarn start
+  930  yarn build
+  931  yarn start
+  932  yarn build
+  933  nvm use 16
+  934  yarn build
+  935  git pull
+  936  yarn dev
+  937  git pull
+  938  cd Developer/Mallikarjun/GitRepository
+  939  git clone git@github.com:tmreddy/GitHubGettingStartedNotes.git
+  940  cd GitHubGettingStartedNotes
+  941  code .
+  942  ..
+  943  cd..
+  944  cd ..
+  945  docker run -it sha256:ffb64c9b7e8b9f1891f7a72609d4e691c4671dc4aa83084fc7b5774958d827de /bin/bash
+  946  ssh -i Developer/Mallikarjun/ec2.pem ubuntu@3.110.174.230
+  947  ssh -i ~./Developer/Mallikarjun/ec2.pem ubuntu@3.110.174.230
+  948  ssh -i ~/Developer/Mallikarjun/ec2.pem ubuntu@3.110.174.230
+  949  chmod 400 Developer/Mallikarjun/ec2.pem"
+  950  chmod 400 Developer/Mallikarjun/ec2.pem
+  951  ssh -i ~/Developer/Mallikarjun/ec2.pem ubuntu@3.110.174.230
+  952  chmod 400 Developer/Mallikarjun/EC2.pem
+  953  ssh -i ~/Developer/Mallikarjun/ec2.pem ubuntu@13.201.166.165
+  954  git status
+  955  git add CSS/index.css
+  956  git add LinuxFundamentals.html
+  957  git status
+  958  git commit -m "updated css and corrected spelling mistakes"
+  959  git push 
+  960  ssh -i ~/Developer/Mallikarjun/ec2.pem ubuntu@13.201.166.165
+  961  ls -a
+  962  ssh -i ~/Developer/Mallikarjun/ec2.pem ubuntu@13.201.166.165
+  963  yarn dev
+  964  git pull
+  965  yarn build
+  966  yarn start 
+  967  yarn dev
+  968  git pull
+  969  nvm use 18
+  970  npm install 
+  971  npm dev
+  972  yarn dev
+  973  node dev
+  974  git checkout master
+  975  git branch
+  976  git branches 
+  977  git branch
+  978  git pull
+  979  git checkout master
+  980  git pull
+  981  git checkout master
+  982  git pull 
+  983  git pull
+  984  clear
+  985  npm install 
+  986  npm install
+  987  yarn dev
+  988  nvm use 18
+  989  yarn dev
+  990  nvm use 18
+  991  yarn dev
+  992  nvm use 18
+  993  yarn dev
+  994  yarn start
+  995  yarn build
+  996  yarn start
+  997  yarn dev
+  998  git --version
+  999  ssh -i Developer/Mallikarjun/EC2.pem ubuntu@13.232.26.3
+ 1000  yarn dev
+ 1001  brew install postgresql@15
+ 1002  git pull
+ 1003  yarn dev
+ 1004  yarn build
+ 1005  yarn dev
+ 1006  yarn build
+ 1007  yarn dev
+ 1008  git pull
+ 1009  yarn dev
+ 1010  yarn start
+ 1011  yarn dev
+ 1012  yarn start
+ 1013  yarn dev
+ 1014  yarn build
+ 1015  yarn dev 
+ 1016  ping mcafee.com
+ 1017  ls -p
+ 1018  ls -a
+ 1019  cd /private/etc
+ 1020  ls
+ 1021  vi host
+ 1022  cat host
+ 1023  ls
+ 1024  ls -a 
+ 1025  touch host
+ 1026  sudo vim host
+ 1027  sudo cat host
+ 1028  ping mcafee.com
+ 1029  ping www.mcafee.com
+ 1030  ping mcafee.com
+ 1031  sudo vim hosts
+ 1032  ping mcafee.com
+ 1033  sudo killall -HUP nDNSREsponder
+ 1034  sudo killall -HUP mDNSResponder
+ 1035  ping mcafee.com
+ 1036  ping www.mcafee.com
+ 1037  ping mcafee.com
+ 1038  exit
+ 1039  yarn dev 
+ 1040  git pull
+ 1041  yarn build
+ 1042  git pull
+ 1043  git diff
+ 1044  git build
+ 1045  yarn build
+ 1046  git status
+ 1047  git add src/core/use-cases/ManageSubscriptionsUseCase.ts
+ 1048  git status
+ 1049  git pull
+ 1050  git fetch
+ 1051  git status
+ 1052  git push
+ 1053  yarn dev
+ 1054  git pull
+ 1055  git mergetool
+ 1056  git pull
+ 1057  yarn dev
+ 1058  npm install
+ 1059  use nvm 18
+ 1060  nvm use 18
+ 1061  yarn start
+ 1062  cd Developer/Mallikarjun/DEVOPS/Git/GitReBase
+ 1063  ls
+ 1064  git init
+ 1065  git status
+ 1066  git add .
+ 1067  git status
+ 1068  git commit -m "Adding Rebase.Html"
+ 1069  git log
+ 1070  git checkout -b feature-branch
+ 1071  ls
+ 1072  vi Rebase.html
+ 1073  git status
+ 1074  git diff
+ 1075  git add .
+ 1076  git commit -m "\nadded commands"
+ 1077  git log
+ 1078  vi Rebase.html
+ 1079  git log
+ 1080  git status
+ 1081  git diff
+ 1082  gut add .
+ 1083  git add .
+ 1084  git status
+ 1085  git commit -m "added commit command, this is second commit on feature-branc"
+ 1086  git log
+ 1087  git checkout main
+ 1088  git checkout master 
+ 1089  git oull origin master
+ 1090  git pull origin master
+ 1091  git checkout feature-branch
+ 1092  git rebase main
+ 1093  git rebase master
+ 1094  git log
+ 1095  git rebase -i HEAD~2
+ 1096  git log
+ 1097  vi Rebase.html
+ 1098  git push -f origin feature-branch
+ 1099  git push -f
+ 1100  git push -f origin master
+ 1101  git push -f feature-branch
+ 1102  git branch 
+ 1103  git push
+ 1104  git push -f master
+ 1105  git push master HEAD:feature-branch
+ 1106  git log
+ 1107  history
+ 1108  git branch
+ 1109  git log
+ 1110  cd ..
+ 1111  ls
+ 1112  mkdir gitRebasGIt
+ 1113  cd gitRebasGIt
+ 1114  ls
+ 1115  git init
+ 1116  touch rebase.txt
+ 1117  ls
+ 1118  git status
+ 1119  git add .
+ 1120  git status
+ 1121  git commit -m "added rebase.txt file"
+ 1122  ls
+ 1123  git status
+ 1124  ls
+ 1125  git checkout -b experiment
+ 1126  ls
+ 1127  vi rebase.txt
+ 1128  cat rebase.txt
+ 1129  git status
+ 1130  git add .
+ 1131  git status
+ 1132  git commit -a
+ 1133  git status
+ 1134  cat rebase.txt
+ 1135  git log
+ 1136  git rebase master
+ 1137  git log
+ 1138  git checkout master
+ 1139  git log
+ 1140  git merge experiment
+ 1141  git log
+ 1142  git branch
+ 1143  git checkout experiment
+ 1144  git log
+ 1145  git checkout master 
+ 1146  cd ..
+ 1147  mkdir reset
+ 1148  cd reset
+ 1149  git init
+ 1150  ls
+ 1151  touch reset.txt
+ 1152  ls
+ 1153  git status
+ 1154  vi reset.txt
+ 1155  git add .
+ 1156  git status
+ 1157  git commit -m "reset command"
+ 1158  git status
+ 1159  ls
+ 1160  cat reset.txt
+ 1161  vi reset.txt
+ 1162  cat reset.txt
+ 1163  git status
+ 1164  git add .
+ 1165  git status
+ 1166  git commit -m "all reset commands"
+ 1167  git log
+ 1168  vi reset.txt
+ 1169  cat reset.txt
+ 1170  git status
+ 1171  git add .
+ 1172  git statu
+ 1173  git status
+ 1174  git commit -m "not required"
+ 1175  git log
+ 1176  cat reset.txt
+ 1177  git log 
+ 1178  git reset 5eed0bf257f623c3dc15fbc8a1d3e001804aeb0e
+ 1179  git log
+ 1180  cat reset.txt
+ 1181  git log
+ 1182  git reset cccc8549157e947d98fa513f0118c4b0cb5af0b4
+ 1183  cat reset.txt
+ 1184  git log
+ 1185  git status
+ 1186  git diff
+ 1187  git add .
+ 1188  git commit -m "learned reset"
+ 1189  cat reset.txt
+ 1190  git status
+ 1191  cat reset.txt
+ 1192  git log
+ 1193  git reset --hard e9c4914adfc6209c6a77438e5668f292332cb335
+ 1194  git log
+ 1195  git log cccc8549157e947d98fa513f0118c4b0cb5af0b4
+ 1196  git reset cccc8549157e947d98fa513f0118c4b0cb5af0b4
+ 1197  cat reset.txt
+ 1198  git status
+ 1199  git diff
+ 1200  git log
+ 1201  git commit .
+ 1202  cat reset.txt
+ 1203  git log
+ 1204  git reset --hard cccc8549157e947d98fa513f0118c4b0cb5af0b4
+ 1205  git log
+ 1206  git status
+ 1207  cat reset.txt
+ 1208  git log
+ 1209  cd ..
+ 1210  ls
+ 1211  mk dir 
+ 1212  ls
+ 1213  mkdir rivert
+ 1214  ls 
+ 1215  cd rivert
+ 1216  ls
+ 1217  git init
+ 1218  vi revert.txt
+ 1219  cat revert.txt
+ 1220  git add .
+ 1221  git status
+ 1222  git commit -m "revert command "
+ 1223  cat revert.txt
+ 1224  vi revert.txt
+ 1225  cat revert.txt
+ 1226  git log
+ 1227  git status
+ 1228  git add .
+ 1229  git commit -m "adding my wife"
+ 1230  git log
+ 1231  git lot
+ 1232  git log
+ 1233  git revert dec1e53ab876832870150ac6e473be57be1b8c2f
+ 1234  cat revert.txt
+ 1235  git log
+ 1236  git status
+ 1237  git diff 
+ 1238  git commit -m "revert\n"
+ 1239  git log
+ 1240  cat revert.txt
+ 1241  cd ..
+ 1242  ls
+ 1243  mkdir stash
+ 1244  ls
+ 1245  cd stash
+ 1246  git init
+ 1247  vi stash.txt
+ 1248  ls
+ 1249  cat stash.txt
+ 1250  vi stashes.txt
+ 1251  ls
+ 1252  git status
+ 1253  git add stash.txt
+ 1254  git status
+ 1255  git stash 
+ 1256  git status
+ 1257  git commit -m "adding stash.txt file"
+ 1258  git status
+ 1259  vi stash.txt
+ 1260  git add stash.txt 
+ 1261  ls
+ 1262  vi WorkInProgress.txt
+ 1263  ls
+ 1264  git status
+ 1265  git log
+ 1266  git stash
+ 1267  ls
+ 1268  git status
+ 1269  cat stashes.txt
+ 1270  cat WorkInProgress.txt
+ 1271  git log
+ 1272  git stash list
+ 1273  git add .
+ 1274  git status
+ 1275  git stash
+ 1276  git status
+ 1277  git stash list
+ 1278  ls
+ 1279  cat stash.txt
+ 1280  vi untracked.txt
+ 1281  ls
+ 1282  git stash -u
+ 1283  ls
+ 1284  git stash list
+ 1285  git checkout -b urgentwork
+ 1286  ls
+ 1287  git stash apply
+ 1288  git staus
+ 1289  git status
+ 1290  git stash list
+ 1291  git stash pop
+ 1292  git stash list
+ 1293  git stash pop
+ 1294  git stash list
+ 1295  git checkout master
+ 1296  ls
+ 1297  git status
+ 1298  git stash list
+ 1299  git stash pop
+ 1300  git stash list
+ 1301  git stash
+ 1302  git status
+ 1303  git stash list
+ 1304  git stash @{1} apply
+ 1305  ls
+ 1306  git status
+ 1307  git apply stash@{1}
+ 1308  ls
+ 1309  git status
+ 1310  cat untracked.txt
+ 1311  git apply stash@{1}
+ 1312  git stash list
+ 1313  git apply stash@{0}
+ 1314  git stash apply stash@{1}
+ 1315  git stash apply stash{0}
+ 1316  git stash apply stash@{0}
+ 1317  git status
+ 1318  cat stash.txt
+ 1319  git stash applu stash@{0}
+ 1320  git stash apply stash@{0}
+ 1321  git stash apply stash@{1}
+ 1322  git staus
+ 1323  git status
+ 1324  git stash list
+ 1325  git stash pop
+ 1326  git stash list
+ 1327  git add .
+ 1328  git commit -m "stash command"
+ 1329  git status
+ 1330  cd ..
+ 1331  mkdir rm
+ 1332  cd rm
+ 1333  git init
+ 1334  touch rm.txt
+ 1335  vi rm.txt
+ 1336  cat rm.txt
+ 1337  git add .
+ 1338  git status
+ 1339  git rm rm.txt
+ 1340  git commit -m "tm"
+ 1341  git status
+ 1342  touch rm1.txt
+ 1343  vi rm1.txt
+ 1344  git status
+ 1345  git rm rm1.txt
+ 1346  ls
+ 1347  git rm rm1.txt
+ 1348  ls
+ 1349  git status
+ 1350  git add .
+ 1351  git status
+ 1352  git rm rm1.txt
+ 1353  git status
+ 1354  git checkout --rm1.txt
+ 1355  git checkout rm1.txt
+ 1356  git status 
+ 1357  cat rm1.txt
+ 1358  git commit -m "asdf"
+ 1359  git status
+ 1360  ls
+ 1361  vi rm1.txt
+ 1362  cat rm1.txt
+ 1363  git status
+ 1364  git checkout rm1.txt
+ 1365  git status
+ 1366  cat rm1.txt
+ 1367  git config list
+ 1368  yarn start
+ 1369  nvm use 18
+ 1370  yarn start
+ 1371  yarn dev
+ 1372  nvm use 18
+ 1373  yarn dev
+ 1374  npm install
+ 1375  npm update
+ 1376  git pull
+ 1377  yarn build
+ 1378  npm install moment
+ 1379  npm install -f moment
+ 1380  yarn dev
+ 1381  git pull
+ 1382  yarn dev
+ 1383  yarn build
+ 1384  yarn start
+ 1385  yarn dev
+ 1386  use nvm 18
+ 1387  yarn build
+ 1388  yarn dev
+ 1389  nvm use 18
+ 1390  yarn start
+ 1391  git pull
+ 1392  npm install
+ 1393  npm install -f
+ 1394  yarn dev
+ 1395  yarn start
+ 1396  npm install -f
+ 1397  yarn dev
+ 1398  nvm use 18
+ 1399  npm install 
+ 1400  npm install -f
+ 1401  yarn dev
+ 1402  git pull
+ 1403  cd ..
+ 1404  mkdir cherrypick
+ 1405  cd cherrypick
+ 1406  git init
+ 1407  vi cherrypick.txt
+ 1408  git status
+ 1409  git add .
+ 1410  git status
+ 1411  git commit -m "learning cherrypick"
+ 1412  vi cherrypick.txt
+ 1413  git add .
+ 1414  git commit -m "added second line"
+ 1415  git status
+ 1416  git checkout -b cherrypick
+ 1417  ls
+ 1418  vi cherrypick.txt
+ 1419  git add
+ 1420  git add .
+ 1421  git commit -m "adding third line"
+ 1422  git log
+ 1423  vi cherrypick.txt
+ 1424  git add .
+ 1425  git commit -m "all changes are done"
+ 1426  git log
+ 1427  git checkout master
+ 1428  cat cherrypick.txt
+ 1429  git log 
+ 1430  git checkout cherrypick
+ 1431  git log
+ 1432  git checkout master
+ 1433  git log
+ 1434  cat cherrypick.txt
+ 1435  git cherry-pick 97083963836a397084cacaa646a46f3295a7fdd1
+ 1436  cat cherrypick.txt
+ 1437  git status
+ 1438  git log
+ 1439  cat cherrypick.txt
+ 1440  checkout cherrypick.txt
+ 1441  checkout cherrypick
+ 1442  git checkout cherrypick
+ 1443  cat cherrypick.txt
+ 1444  git log 
+ 1445  git diff
+ 1446  git reflog
+ 1447  git blame cherrypick.txt
+ 1448  cd ..
+ 1449  cd GitRepository
+ 1450  git clone git@github.com:nlaxmi1260/VersionControlGit.git
+ 1451  cd VersionControlGit
+ 1452  ls
+ 1453  code .
+ 1454  git status
+ 1455  git diff
+ 1456  git add .
+ 1457  git status
+ 1458  git commit -m "added script updated css and added new section in html file"
+ 1459  git push
+ 1460  git global --config --list
+ 1461  git --config --list
+ 1462  git global help
+ 1463  git config --global --list 
+ 1464  cd ..
+ 1465  cd DEVOPS
+ 1466  cd Git
+ 1467  git clone git@github.com:nlaxmi1260/VersionControlGit.git
+ 1468  code .
+ 1469  cd VersionControlGit
+ 1470  code .
+ 1471  git status
+ 1472  git add CSS/Index.css
+ 1473  git commit -m "added code style"
+ 1474  git push
+ 1475  git reflog
+ 1476  cd ..
+ 1477  cdc cherrypick
+ 1478  cd cherrypick
+ 1479  git reflog
+ 1480  cd ..
+ 1481  cd VersionControlGit
+ 1482  cd ..
+ 1483  cd cherrypick
+ 1484  ls
+ 1485  git status
+ 1486  touch temp.txt
+ 1487  git status
+ 1488  git clean -f
+ 1489  ping ecomm-perf-arsvc-sql-db.cf5hrtzm8m1i.us-west-2.rds.amazonaws.com
+ 1490  cd /
+ 1491  pwd
+ 1492  ls
+ 1493  cd Users
+ 1494  ls
+ 1495  cd mreddy
+ 1496  clear
+ 1497  ping ecomm-perf-arsvc-sql-db.cf5hrtzm8m1i.us-west-2.rds.amazonaws.com
+ 1498  ls .ssh
+ 1499  cat .ssh/config
+ 1500  cd Developer
+ 1501  cd Mallikarjun
+ 1502  ls
+ 1503  cd GitRepository
+ 1504  ls
+ 1505  git clone git@github.com-tmreddy:tmreddy/GitHubGettingStartedNotes.git
+ 1506  cd ..
+ 1507  git clone git@github.com-tmreddy:tmreddy/GitHubGettingStartedNotes.git
+ 1508  cd GitHubGettingStartedNotes
+ 1509  code .
+ 1510  git status
+ 1511  git add .
+ 1512  git commit -m "added GitTopics.png"
+ 1513  git push
+ 1514  cd ..
+ 1515  ping mcafee.com
+ 1516  ping cart.mcafee.com
+ 1517  ping www.mcafee.com
+ 1518  ping homeweb.mcafee.com
+ 1519  ping home.mcafee.com
+ 1520  ls
+ 1521  cd Developer
+ 1522  cd Mallikarjun
+ 1523  ls
+ 1524  cd DEVOPS
+ 1525  ls
+ 1526  ls git
+ 1527  mkdir Linux
+ 1528  cd Linux
+ 1529  ls
+ 1530  vi BigFile.txt
+ 1531  cat BigFile.txt
+ 1532  cat less BigFile.txt
+ 1533  exit
+ 1534  git pull
+ 1535  cd GitRepository/ecom-myaccount-apigateway
+ 1536  cd configs
+ 1537  man cmp
+ 1538  cmp
+ 1539  cmp .qa.env .stg.env
+ 1540  ping https://einstein-stg-core.awscommon.mcafee.com
+ 1541  ping einstein-stg-core.awscommon.mcafee.com
+ 1542  ping offer-service.ecomm-stg.int.ppawscommon.mcafee.com
+ 1543  ping idstg.mcafee.com
+ 1544  yarn build
+ 1545  yarn start
+ 1546  nvm use 18
+ 1547  yarn start
+ 1548  git pull
+ 1549  yarn build
+ 1550  ping ecomm-perf-arsvc-sql-db.cf5hrtzm8m1i.us-west-2.rds.amazonaws.com
+ 1551  ping ecomm-stg-arsvc-sql-db.cf5hrtzm8m1i.us-west-2.rds.amazonaws.com
+ 1552  yarn start
+ 1553  yarn dev
+ 1554  yarn start
+ 1555  yarn dev
+ 1556  git checkout release-ebf-std-16Oct2024-14441\n 
+ 1557  ls
+ 1558  ls -a
+ 1559  git checkout release-ebf-std-16Oct2024-14441\n 
+ 1560  git pull
+ 1561  nvm use 18
+ 1562  yarn install
+ 1563  yarn install -f
+ 1564  yarn build
+ 1565  yarn dev
+ 1566  git checkout PLAT-2667/AR-Optout-Changes
+ 1567  git branch
+ 1568  git checkout feature/PLAT-2667/AR-Optout
+ 1569  use nvm 18
+ 1570  nvm use 18
+ 1571  yarn dev
+ 1572  git checkout feature/PLAT-2667/Oct23release
+ 1573  git pull
+ 1574  cd 
+ 1575  ssh -i Developer/Mallikarjun/EC2.pem ubuntu@3.111.34.12
+ 1576  ubuntu@3.111.34.12
+ 1577  telnet ubuntu@3.111.34.12
+ 1578  ssh -i Developer/Mallikarjun/EC2.pem ubuntu@3.111.34.12
+ 1579  cd /private/etc
+ 1580  ls
+ 1581  cat hosts
+ 1582  exit
+ 1583  clear
+ 1584  ssh -i Developer/Mallikarjun/EC2.pem ubuntu@3.111.34.12
+ 1585  ssh -i Developer/Mallikarjun/EC2.pem ubuntu@13.235.80.6
+ 1586  env
+ 1587  ssh -i Developer/Mallikarjun/EC2.pem ubuntu@13.235.80.6
+ 1588  clear
+ 1589  ssh -i Developer/Mallikarjun/EC2.pem ubuntu@13.235.80.6
+ 1590  ssh -i Developer/Mallikarjun/EC2.pem ubuntu@65.2.71.210
+ 1591  cd Developer/Mallikarjun
+ 1592  ls
+ 1593  cd DEVOPS
+ 1594  ls
+ 1595  mkdir ShellScripts
+ 1596  cd ShellScripts
+ 1597  ls
+ 1598  vi ssh.sh
+ 1599  cat ssh.sh
+ 1600  echo $SHEEL
+ 1601  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@65.2.71.210
+ 1602  xit
+ 1603  exit
+ 1604  git branch
+ 1605  git checkout PLAT-2667/Oct23release\n 
+ 1606  git branch 
+ 1607  git checkout featrue/PLAT-2667/Oct23release\n 
+ 1608  git branch 
+ 1609  git checkout /featrue/PLAT-2667/Oct23release\n 
+ 1610  git checkout feature/PLAT-2667/Oct23release\n 
+ 1611  git pull
+ 1612  yarn build
+ 1613  nvm use 18
+ 1614  npm install 
+ 1615  npm install -f
+ 1616  yarn dev
+ 1617  git remotes
+ 1618  git remote -v
+ 1619  git pull
+ 1620  git status
+ 1621  git push
+ 1622  brew install tfenv
+ 1623  brew unlink terraform
+ 1624  brew install tfenv
+ 1625  tfenv --version
+ 1626  tfenv install 1.9.8
+ 1627  tfenv use 1.9.8
+ 1628  tfenv install latest
+ 1629  tfenv list
+ 1630  brew install tgenv
+ 1631  tgenv --version
+ 1632  tgenv install 0.68.4
+ 1633  tgenv use 0.68.4
+ 1634  tgenv --help
+ 1635  git status
+ 1636  git pull
+ 1637  docker pull node
+ 1638  docker ps
+ 1639  docker image ls
+ 1640  ping einstein-core.awscommon.mcafee.com
+ 1641  ping einstein-prod-core.awscommon.mcafee.com
+ 1642  git pull
+ 1643  git checkout feature/PLAT-2788/GeoExpansionAndWinBack
+ 1644  git pull
+ 1645  nvm use 18
+ 1646  npm install -f
+ 1647  yarn dev
+ 1648  cd Developer/Mallikarjun/GitRepository
+ 1649  ls
+ 1650  git clone git@github.com:tmreddy/LeaningDocker.git
+ 1651  git clone git@github-tmreddy.com:tmreddy/LeaningDocker.git
+ 1652  git configs --list
+ 1653  git config --list
+ 1654  ls
+ 1655  cd .ssh
+ 1656  ls
+ 1657  cat config
+ 1658  git clone git@github.com-tmreddy:tmreddy/LeaningDocker.git
+ 1659  git clone git@github.com-tmreddy:tmreddy/GettingStartedWithDocker.git
+ 1660  git clone git@github.com-tmreddy:tmreddy/DockerContainersandKubernetesFundamentals.git
+ 1661  cd DockerContainersandKubernetesFundamentals
+ 1662  code .
+ 1663  ipconfig getifaddr
+ 1664  ipconfig getifaddr en0
+ 1665  git pull
+ 1666  nvm use 18
+ 1667  yarn dev
+ 1668  yarn build
+ 1669  yarn dev
+ 1670  yarn build
+ 1671  yarn dev
+ 1672  yarn build
+ 1673  yarn dev
+ 1674  nvm use 18
+ 1675  yarn start
+ 1676  yarn dev
+ 1677  npm install
+ 1678  npm start
+ 1679  yarn start
+ 1680  yarn dev
+ 1681  npm run start
+ 1682  yarn dev
+ 1683  git push
+ 1684  git pull
+ 1685  git status
+ 1686  git push
+ 1687  git diff
+ 1688  clear
+ 1689  yarn dev 
+ 1690  nvm use 18
+ 1691  yarn dev 
+ 1692  git pull
+ 1693  git status
+ 1694  git restore -- staged
+ 1695  git restore --staged
+ 1696  git restore --staged dist.zip
+ 1697  git restore --staged package-lock.json
+ 1698  git restore --staged yarn.lock
+ 1699  git status
+ 1700  git add src/core/use-cases/ChangePlanUseCase.ts
+ 1701  git add src/core/use-cases/ManageSubscriptionsUseCase.ts
+ 1702  git status
+ 1703  git commit -m [MY-3412] - Fix for MY-3565
+ 1704  git status
+ 1705  git commit -m "[MY-3412] - Fix for MY-3565"
+ 1706  git status
+ 1707  git push
+ 1708  cd ..
+ 1709  cd  GitRepository
+ 1710  git clone -b first_draft git@github.com:mcafee-eng/entitlements-bundler.git
+ 1711  git pull
+ 1712  go run .
+ 1713  go mod tidy
+ 1714  go help
+ 1715  ipconfig getifaddr en0
+ 1716  docker network ls 
+ 1717  docker network inspect crud_default
+ 1718  docker network help
+ 1719  docker network ls
+ 1720  docker network rm crud_default
+ 1721  dockcer network ls
+ 1722  docker network ls
+ 1723  docker network rm isolated_network
+ 1724  docker network ls
+ 1725  docker network help
+ 1726  docker network disconnect help
+ 1727  docker run --help
+ 1728  ip addr
+ 1729  docker ls
+ 1730  docker ps
+ 1731  clear
+ 1732  docker network ls
+ 1733  docker network inspect bridge
+ 1734  docker run -d --name myapp -p 8081:80 aputra/myapp-188:v3
+ 1735  docker ps
+ 1736  docker ps -a 
+ 1737  docker inspect myapp
+ 1738  curl localhost:8081/api/info
+ 1739  docker shutdown myapp
+ 1740  docker stop myapp
+ 1741  docker rm myapp
+ 1742  docker ps
+ 1743  docker run -d --name myapp -p 8081:8080 aputra/myapp-188:v3 
+ 1744  curl localhost:8081/api/info
+ 1745  cd Docker
+ 1746  .,s
+ 1747  ls
+ 1748  docker build -t myapp .
+ 1749  docker images
+ 1750  docker run -d --name myhtmlapp -p 8080:80 myapp
+ 1751  docker ps 
+ 1752  curl localhost:8080
+ 1753  curl localhost:8080/Index.html
+ 1754  docker inspect myapp
+ 1755  curl 172.17.0.1/index.html
+ 1756  ping 172.17.0.1
+ 1757  docker run -d --name myhtmlappv2 -p 8081:80 myapp
+ 1758  docker ps
+ 1759  docker run -d --name myhtmlappv2 -p 8082:80 myapp 
+ 1760  ps
+ 1761  docker ps
+ 1762  docker run -d --name myhtmlappv2 -p 8082:80 myapp 
+ 1763  docker ps
+ 1764  docker inspect myhtmlappv2
+ 1765  curl localhost:8082/Index.html
+ 1766  curl localhost:8080/Index.html
+ 1767  docker inspect myhtmlappv2
+ 1768  docker ps
+ 1769  docker exec -it myhtmlapp /bin/bash
+ 1770  docker exec -it myhtmlapp /bin/sh
+ 1771  ls
+ 1772  cd Docker
+ 1773  docker ps
+ 1774  docker exec -it myhtmlapp sh
+ 1775  docker exec -it myhtmlappv2 sh
+ 1776  docker rm -f myhtmlapp myhtmlappv2
+ 1777  docker ps
+ 1778  docker network ls
+ 1779  docker network create my-bridge-net
+ 1780  docker network ls
+ 1781  docker network inscept my-bridge-net
+ 1782  docker network inspect my-bridge-net
+ 1783  docker network rm my-bridge-net
+ 1784  docker network create my-bridge-net --subnet 10.0.0.0/19 --gateway 10.0.0.1
+ 1785  docker network ls
+ 1786  docker inspect my-bridge-net
+ 1787  docker run -d --name myapp -p 8080:80 myapp
+ 1788  docker rm myapp
+ 1789  docker rm -f myapp
+ 1790  docker run -d --name myapp -p 8080:80 --network my-bridge-net myapp
+ 1791  docker inspect myapp
+ 1792  docker run -d --name myappv1 -p 8081:80 --network my-bridge-net myapp
+ 1793  docker ps 
+ 1794  docker inspect myappv1
+ 1795  curl localhost:8080/Index.html
+ 1796  curl localhost:8081/Index.html
+ 1797  docker exec -it myapp sh
+ 1798  history
+ 1799  docker rm -f myapp myappv1
+ 1800  docker network rm my-bridge-net
+ 1801  dokcer ps
+ 1802  docker network ls
+ 1803  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@43.204.141.213
+ 1804  ls -l ~/Developer/Mallikarjun/EC2.pem
+ 1805  chmod 777 ~/Developer/Mallikarjun/EC2.pem
+ 1806  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@43.204.141.213
+ 1807  chmod 600 ~/Developer/Mallikarjun/EC2.pem
+ 1808  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@43.204.141.213
+ 1809  chmod 400 Developer/Mallikarjun/ec2.pem
+ 1810  chmod 400 Developer/Mallikarjun/EC2.pem
+ 1811  chmod 400 ~/Developer/Mallikarjun/EC2.pem
+ 1812  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@43.204.141.213
+ 1813  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1814  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@43.204.141.213
+ 1815  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1816  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-3-108-235-62.ap-south-1.compute.amazonaws.com
+ 1817  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1818  ping ec2-3-108-235-62.ap-south-1.compute.amazonaws.com
+ 1819  curl ec2-3-108-235-62.ap-south-1.compute.amazonaws.com:8080/api/info
+ 1820  docker run -d --name myapp -p 8081/8080 aputra/myapp-188:v3
+ 1821  docker run -d --name myapp -p 8081:8080 aputra/myapp-188:v3
+ 1822  docker ps
+ 1823  docker inspect myapp
+ 1824  ping 172/17.0.1
+ 1825  ping 172/17.0.2
+ 1826  ping 172.17.0.2
+ 1827  curl localhost:8081/api/info
+ 1828  curl 172.17.0.2:8081/api/info
+ 1829  curl 172.17.0.2:8080/api/info
+ 1830  docker ps
+ 1831  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1832  ping 172.17.0.2
+ 1833  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1834  curl 172.31.5.6:8080/api/info
+ 1835  ping 15.206.212.155
+ 1836  curl 15.206.212.155:8080
+ 1837  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-3-108-235-62.ap-south-1.compute.amazonaws.com
+ 1838  ping ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1839  ping ec2-3-108-235-62.ap-south-1.compute.amazonaws.com
+ 1840  ping 15.206.212.155:8080/api/info
+ 1841  ping 15.206.212.155
+ 1842  curl 15.206.212.155:8080/api/info
+ 1843  curl 15.206.212.155:api/info
+ 1844  curl 15.206.212.155/api/info
+ 1845  curl 15.206.212.155:8080/api/info
+ 1846  curl ec2-15-206-212-155.ap-south-1.compute.amazonaws.com:8080/api/info
+ 1847  curl ec2-15-206-212-155.ap-south-1.compute.amazonaws.com/api/info
+ 1848  curl ec2-15-206-212-155.ap-south-1.compute.amazonaws.com:8080/api/info
+ 1849  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1850  docker run -d --name myapp -network none  aputra/myapp-188:v3
+ 1851  docker run -d --name myapp --network none  aputra/myapp-188:v3
+ 1852  docker rm -f myapp
+ 1853  docker run -d --name myapp --network none  aputra/myapp-188:v3
+ 1854  docker inspect myapp
+ 1855  docker exec myapp ip addr
+ 1856  ip addr
+ 1857  ipconfig getifaddr en0
+ 1858  ipconfig getifaddr
+ 1859  ipcofig
+ 1860  ipconfig 
+ 1861  networksetup -listallnetworkservices\n
+ 1862  ipconfig
+ 1863  ifcomfig
+ 1864  ifconfig
+ 1865  ifconfig > ifconfig.txt
+ 1866  cat ifconfig.txt
+ 1867  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1868  ip addr
+ 1869  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1870  docker network create -d ipvlan --subnet=192.168.0.0 --gatway=192.168.0.1 -o ipvlan_mode=l2 -o parent=en0 my-ipvlan-net
+ 1871  docker network create -d ipvlan --subnet=192.168.0.0 --gateway=192.168.0.1 -o ipvlan_mode=l2 -o parent=en0 my-ipvlan-net
+ 1872  docker network create -d ipvlan --subnet=192.168.0.0/255 --gateway=192.168.0.1 -o ipvlan_mode=l2 -o parent=en0 my-ipvlan-net
+ 1873  docker network create -d ipvlan --subnet=192.168.0.0/0 --gateway=192.168.0.1 -o ipvlan_mode=l2 -o parent=en0 my-ipvlan-net
+ 1874  ip 
+ 1875  ip a
+ 1876  docker network create -d ipvlan --subnet=192.168.1.0/24 --gateway=192.168.0.1 -o ipvlan_mode=l2 -o parent=en0 my-ipvlan-net
+ 1877  docker network create -d ipvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o ipvlan_mode=l2 -o parent=en0 my-ipvlan-net
+ 1878  ifconfig
+ 1879  docker network create -d ipvlan --subnet=192.168.1.0/24 --gateway=192.168.1.1 -o ipvlan_mode=l2 -o parent=eth0 my-ipvlan-net
+ 1880  docker network ls
+ 1881  docker ps
+ 1882  docker rm -f myapp
+ 1883  docker run -d --name myapp --network my-ipvlan-net aputra/myapp-188:v3
+ 1884  docker inspect myapp
+ 1885  curl 192.168.1.2:8080/api/info
+ 1886  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1887  curl 192.168.1.2:8080/api/info
+ 1888  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-3-108-235-62.ap-south-1.compute.amazonaws.com
+ 1889  curl 192.168.1.2:8080/api/info
+ 1890  ping 192.168.1.2
+ 1891  curl 192.168.1.2:8080/api/info
+ 1892  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1893  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-3-108-235-62.ap-south-1.compute.amazonaws.com
+ 1894  docker network ls
+ 1895  docker network rm my-ipvlan-net
+ 1896  docker rm -f myapp
+ 1897  docker network rm my-ipvlan-net
+ 1898  docker network ls
+ 1899  ssh -i ~/Developer/Mallikarjun/EC2.pem ssh -i "EC2.pem" ubuntu@ec2-13-127-130-42.ap-south-1.compute.amazonaws.com
+ 1900  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-13-127-130-42.ap-south-1.compute.amazonaws.com
+ 1901  ssh -i ~/Developer/Mallikarjun/EC2.pem ubuntu@ec2-15-206-212-155.ap-south-1.compute.amazonaws.com
+ 1902  cd DockerVolume
+ 1903  docker build -t timestamp-file-creator .
+ 1904  docker images
+ 1905  docker run --name myfileapp timestamp-file-creator
+ 1906  docker run -d --name myfileapp timestamp-file-creator
+ 1907  docker rm -f myfileapp
+ 1908  docker run -d --name myfileapp timestamp-file-creator
+ 1909  docker exec -it myfileapp /bin/bash
+ 1910  docker exec -it myfileapp user/local/bin/bash
+ 1911  docker exec -it myfileapp bash
+ 1912  docker rm -f myfileapp
+ 1913  docker images rm timestamp-file-creator
+ 1914  docker images --help
+ 1915  docker build -t timestamp-file-creator .
+ 1916  docker images
+ 1917  docker run -d --name myfileapp timestamp-file-creator
+ 1918  docker exec -it myfileapp bash
+ 1919  docker build -t filegen .
+ 1920  docker run -d --name myfileapp filegen
+ 1921  docker exec -it myfileapp bash
+ 1922  docker rm -f myfileapp
+ 1923  docker volume create myfiles
+ 1924  docker volume ls
+ 1925  docker volume inspect myfiles
+ 1926  docker run -d --name myfileapp -v myfiles:/output filegen
+ 1927  docker exec -it myfileapp bash
+ 1928  docker volume inspect myfiles
+ 1929  history
+ 1930  docker run -d --name myfileapp1 -v myfiles:/output filegen
+ 1931  docker volume inspect myfiles
+ 1932  docker run -d --name myfileapp -v /Users/mreddy/Developer/Mallikarjun/GitRepository/DevopsZeroToHero/Docker/DockerVolume:/output filegen
+ 1933  docker run -d --name myfileapp1 -v /Users/mreddy/Developer/Mallikarjun/GitRepository/DevopsZeroToHero/Docker/DockerVolume:/output filegen
+ 1934  docker run -d --name myfileapp --mount type=volume,source=myfiles,target=/output filegen

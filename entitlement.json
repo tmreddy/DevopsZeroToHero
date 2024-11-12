@@ -1,0 +1,487 @@
+{
+    "primarySubRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada",
+    "planRestrictions": {
+        "bd7c2d18-1c71-4bb9-b68c-791ce28beada": [
+            {
+                "name": "num_devices_grace",
+                "value": "50"
+            }
+        ]
+    },
+    "products": [
+        {
+            "name": "Secure VPN",
+            "sku": "e7e8785d-b411-4394-8ca6-373e88b5377d",
+            "clientCode": "SECURE_VPN",
+            "restrictions": [
+                {
+                    "name": "excluded_sub_countries",
+                    "value": "IN,CN,RU"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Wi-Fi Scan",
+            "sku": "230f8228-1528-434b-9752-7b77345e6c99",
+            "clientCode": "SAFE_WIFI",
+            "restrictions": [
+                {
+                    "name": "leave_behind_days",
+                    "value": "999999"
+                },
+                {
+                    "name": "leave_behind_mode",
+                    "value": "LIMITED"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Date of birth monitoring",
+            "sku": "c88a58e1-90ca-4ec8-a138-0de495645d46",
+            "clientCode": "BIRTHDAY_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "1"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Driver's license monitoring",
+            "sku": "cc16c88c-c24d-4982-8e66-fbe9543b849b",
+            "clientCode": "DL_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "2"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Credit card number monitoring",
+            "sku": "582c8fd0-114b-48fe-989a-2cf6e6dad083",
+            "clientCode": "CREDITCARD_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "10"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Bank account number monitoring",
+            "sku": "6777a4db-4274-4e19-a055-47cae42af5f4",
+            "clientCode": "BANKACCOUNT_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "10"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Antivirus",
+            "sku": "b94eb047-a677-4418-9e4a-fbc77b1b0101",
+            "clientCode": "VSO",
+            "restrictions": [
+                {
+                    "name": "leave_behind_mode",
+                    "value": "LIMITED"
+                },
+                {
+                    "name": "leave_behind_days",
+                    "value": "999999"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "SSN monitoring",
+            "sku": "36f259c0-77e3-4af8-9b8f-6a6a9e9e314a",
+            "clientCode": "SSN_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "1"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "User name / Gamertag ID monitoring",
+            "sku": "3318777a-9ca8-4b84-a48d-7b7ed6c70319",
+            "clientCode": "USERNAME_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "10"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Health ID monitoring",
+            "sku": "a6786ee4-44a9-4a92-bbf4-93db86aba56e",
+            "clientCode": "HEALTHID_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "2"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Passport monitoring",
+            "sku": "893ee3e5-76e4-45f8-a67f-0168050bbb05",
+            "clientCode": "PASSPORT_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "2"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Phone number monitoring",
+            "sku": "d78e90cb-2925-4915-a844-09c54b06b7f0",
+            "clientCode": "PHONE_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "10"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "System scan",
+            "sku": "8c266a9d-e5e3-4c15-8e0d-3a80ac0b9f38",
+            "clientCode": "SYSTEM_SCAN",
+            "restrictions": [
+                {
+                    "name": "leave_behind_days",
+                    "value": "999999"
+                },
+                {
+                    "name": "leave_behind_mode",
+                    "value": "LIMITED"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Tax ID monitoring",
+            "sku": "3c9b9985-4197-4bf4-91be-100bd559dfb7",
+            "clientCode": "TAXID_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "2"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Email address monitoring",
+            "sku": "d911f50c-fa59-42c1-928f-79cf81146204",
+            "clientCode": "EMAIL_MONITORING",
+            "restrictions": [
+                {
+                    "name": "asset_limit",
+                    "value": "10"
+                }
+            ],
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Password manager",
+            "sku": "3b090975-b5c0-4bd9-9705-95cb39e55045",
+            "clientCode": "MTK",
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Tracker remover",
+            "sku": "cc3d71d1-0fa6-4fd4-9cf1-6e629221fb89",
+            "clientCode": "MQC",
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Firewall",
+            "sku": "c1e8a576-8051-4b96-a644-d2f61f40f7fe",
+            "clientCode": "MPFP",
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Protection Score",
+            "sku": "655b6eff-2534-47f2-b098-e53ca4506cc5",
+            "clientCode": "PROTECTION_SCORE",
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Web Protection",
+            "sku": "24b73003-840c-4b2d-a5f3-fff52113afc3",
+            "clientCode": "MSADP",
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "File Shredder",
+            "sku": "16343e4c-dfe5-4c52-af79-3a543170931f",
+            "clientCode": "MFS",
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        },
+        {
+            "name": "Text Scam Detector",
+            "sku": "297dc866-67e4-4851-bf46-aa2fe6a2a69a",
+            "clientCode": "SCAM_PROTECTION",
+            "isEntitled": true,
+            "expiryTime": 1762272238887,
+            "possibleExclusionRules": [
+                {
+                    "type": "unavailableForLeaveBehind",
+                    "description": "Convert the expired subscription into a Paid subscription to access this product",
+                    "expiryTime": 1762272238887,
+                    "graceDurationInDays": 30,
+                    "isApplied": true
+                }
+            ],
+            "isThirdParty": false,
+            "subRefId": "bd7c2d18-1c71-4bb9-b68c-791ce28beada"
+        }
+    ]
+}

@@ -26,21 +26,27 @@
       <li>Frontend container wants to connect to Backend container</li>
       <li>Container 1 wants to talk to container 2</li>
       <li>Container 1 is isolated with container 2</li>
-      <li>Docker creates a default bridge networking called docker0 virtual ethernet veth - 1. Bridge networking</li>
-      <li>2 . Host networking - this is very problematic as </li>
-      <li>3. Overlay networking - is very popular - if multiple host are there overlay networking is very helpful</li>
-      <li>both the containers are using bridgenetwroking so one container can talk to another container this is not secure</li>
+      <li>Docker creates a default bridge networking called docker0 virtual ethernet veth - 
+      <ol> 
+        <li>Bridge networking</li>
+        <li>Host networking - contianers will directly bind to the eth0 of the host, this is very problematic as hwo ever has the access to host will also have the access to container.</li>
+        <li>Overlay networking - is very popular - if multiple host are there overlay networking is very helpful. Will learn more when we learn kubernetes. Overlay network is too much for docker.</li>
+      </ol>
+        <li>Both the containers are using bridge netwroking so one container can talk to another container this is not secure. If we are using out of box bridge network (default), other containers can talk to the finance container. </li>
       <li>Networking isolation is not possible with out of box nature</li>
+      <li>Out of box networking is not secure.</li>
       <li>Docker allows you to create custom bridge networks</li>
-      <li>$ docker network command to create custom bridge networks</li>
+      <h3>Lab</h3>
+      <li>$ docker network - command to create custom bridge networks</li>
       <li>$ docker run -d --name login nginx:latest</li>
       <li>$ docker exec -it login /bin/bash</li>
       <li>$ apt update</li>
       <li>$ apt-get install iputils-ping -y : by defualt ping is not installed</li>
       <li>$ ping -V</li>
-      <li>docker run -d --name logout nginx:latest</li>
-      <li>$ docker inspect login</li>
-      <li>$ docker inspect logout</li>
+      <li>$ docker run -d --name logout nginx:latest</li>
+      <li>$ docker ps</li>
+      <li>$ docker inspect login - take IP address</li>
+      <li>$ docker inspect logout - ping IP address of login</li>
       <li>in login container ping 172.17.0.3 [logout contaienr IP address]</li>
       <li>$ docker exec -it logout /bin/bash</li>
       <li>$ apt update</li>
@@ -52,6 +58,7 @@
       <li>$ docker run -d --name finance --network=secure-network nginx:latest</li>
       <li>$ docker inspect finance ip address is diffenet subnet from login and logout containers 172.20.0.2</li>
       <li>$ ping 172.20.0.2 from container login will not be able to connect to finance container</li>
+      <h3>Host network demo </h3>
       <li>$ docker run -d --name host-demo --network=host nginx:latest</li>
       <li>$ docker inspect host-demo : there is no ipaddress as this container using host networking</li>
     </ol>
