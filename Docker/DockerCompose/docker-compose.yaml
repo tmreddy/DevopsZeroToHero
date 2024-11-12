@@ -1,0 +1,46 @@
+# version: "3.8" 
+
+services:
+  web:
+    # build: ./Web/.
+    image: dockercompose-web 
+    ports:
+      - "8080:80"
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - bl
+  bl: 
+    # build: ./BL/.
+    image: dockercompose-bl 
+    ports:
+      - "8081:80"
+    networks:
+      - backend
+      - frontend
+    depends_on:
+      - db
+  db: 
+    # build: ./DB/.
+    image: dockercompose-db
+    networks:
+      - backend
+    volumes: 
+      - myfiles:/output
+
+networks:
+  frontend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "172.20.10.0/24"
+          gateway: "172.20.10.1"
+  backend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "172.30.10.0/24"
+          gateway: "172.30.10.1"
+volumes:
+  myfiles:
